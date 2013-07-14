@@ -1,0 +1,316 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		453896C517931C2100B3087E /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 453896C417931C2100B3087E /* UIKit.framework */; };
+		453896C717931C2100B3087E /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 453896C617931C2100B3087E /* Foundation.framework */; };
+		453896C917931C2100B3087E /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 453896C817931C2100B3087E /* CoreGraphics.framework */; };
+		453896CF17931C2100B3087E /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 453896CD17931C2100B3087E /* InfoPlist.strings */; };
+		453896D117931C2100B3087E /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 453896D017931C2100B3087E /* main.m */; };
+		453896D517931C2100B3087E /* BTAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 453896D417931C2100B3087E /* BTAppDelegate.m */; };
+		453896D717931C2100B3087E /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = 453896D617931C2100B3087E /* Default.png */; };
+		453896D917931C2100B3087E /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 453896D817931C2100B3087E /* Default@2x.png */; };
+		453896DB17931C2100B3087E /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 453896DA17931C2100B3087E /* Default-568h@2x.png */; };
+		453896EA17931C6C00B3087E /* BTViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 453896E817931C6C00B3087E /* BTViewController.m */; };
+		453896EE17931C9400B3087E /* InfiniTabBar.m in Sources */ = {isa = PBXBuildFile; fileRef = 453896ED17931C9400B3087E /* InfiniTabBar.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		453896C117931C2100B3087E /* GDBWTA.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GDBWTA.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		453896C417931C2100B3087E /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		453896C617931C2100B3087E /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		453896C817931C2100B3087E /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		453896CC17931C2100B3087E /* GDBWTA-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "GDBWTA-Info.plist"; sourceTree = "<group>"; };
+		453896CE17931C2100B3087E /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		453896D017931C2100B3087E /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		453896D217931C2100B3087E /* GDBWTA-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "GDBWTA-Prefix.pch"; sourceTree = "<group>"; };
+		453896D317931C2100B3087E /* BTAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BTAppDelegate.h; sourceTree = "<group>"; };
+		453896D417931C2100B3087E /* BTAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BTAppDelegate.m; sourceTree = "<group>"; };
+		453896D617931C2100B3087E /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
+		453896D817931C2100B3087E /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x.png"; sourceTree = "<group>"; };
+		453896DA17931C2100B3087E /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
+		453896E817931C6C00B3087E /* BTViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BTViewController.m; sourceTree = "<group>"; };
+		453896E917931C6C00B3087E /* BTViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BTViewController.h; sourceTree = "<group>"; };
+		453896EC17931C9400B3087E /* InfiniTabBar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = InfiniTabBar.h; sourceTree = "<group>"; };
+		453896ED17931C9400B3087E /* InfiniTabBar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = InfiniTabBar.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		453896BE17931C2100B3087E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				453896C517931C2100B3087E /* UIKit.framework in Frameworks */,
+				453896C717931C2100B3087E /* Foundation.framework in Frameworks */,
+				453896C917931C2100B3087E /* CoreGraphics.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		453896B817931C2100B3087E = {
+			isa = PBXGroup;
+			children = (
+				453896CA17931C2100B3087E /* GDBWTA */,
+				453896C317931C2100B3087E /* Frameworks */,
+				453896C217931C2100B3087E /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		453896C217931C2100B3087E /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				453896C117931C2100B3087E /* GDBWTA.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		453896C317931C2100B3087E /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				453896C417931C2100B3087E /* UIKit.framework */,
+				453896C617931C2100B3087E /* Foundation.framework */,
+				453896C817931C2100B3087E /* CoreGraphics.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		453896CA17931C2100B3087E /* GDBWTA */ = {
+			isa = PBXGroup;
+			children = (
+				453896EB17931C7200B3087E /* Utility */,
+				453896E717931C4F00B3087E /* MainViewController */,
+				453896D317931C2100B3087E /* BTAppDelegate.h */,
+				453896D417931C2100B3087E /* BTAppDelegate.m */,
+				453896CB17931C2100B3087E /* Supporting Files */,
+			);
+			path = GDBWTA;
+			sourceTree = "<group>";
+		};
+		453896CB17931C2100B3087E /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				453896CC17931C2100B3087E /* GDBWTA-Info.plist */,
+				453896CD17931C2100B3087E /* InfoPlist.strings */,
+				453896D017931C2100B3087E /* main.m */,
+				453896D217931C2100B3087E /* GDBWTA-Prefix.pch */,
+				453896D617931C2100B3087E /* Default.png */,
+				453896D817931C2100B3087E /* Default@2x.png */,
+				453896DA17931C2100B3087E /* Default-568h@2x.png */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		453896E717931C4F00B3087E /* MainViewController */ = {
+			isa = PBXGroup;
+			children = (
+				453896E817931C6C00B3087E /* BTViewController.m */,
+				453896E917931C6C00B3087E /* BTViewController.h */,
+			);
+			name = MainViewController;
+			sourceTree = "<group>";
+		};
+		453896EB17931C7200B3087E /* Utility */ = {
+			isa = PBXGroup;
+			children = (
+				453896EC17931C9400B3087E /* InfiniTabBar.h */,
+				453896ED17931C9400B3087E /* InfiniTabBar.m */,
+			);
+			name = Utility;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		453896C017931C2100B3087E /* GDBWTA */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 453896E417931C2100B3087E /* Build configuration list for PBXNativeTarget "GDBWTA" */;
+			buildPhases = (
+				453896BD17931C2100B3087E /* Sources */,
+				453896BE17931C2100B3087E /* Frameworks */,
+				453896BF17931C2100B3087E /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = GDBWTA;
+			productName = GDBWTA;
+			productReference = 453896C117931C2100B3087E /* GDBWTA.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		453896B917931C2100B3087E /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				CLASSPREFIX = BT;
+				LastUpgradeCheck = 0460;
+				ORGANIZATIONNAME = Air;
+			};
+			buildConfigurationList = 453896BC17931C2100B3087E /* Build configuration list for PBXProject "GDBWTA" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 453896B817931C2100B3087E;
+			productRefGroup = 453896C217931C2100B3087E /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				453896C017931C2100B3087E /* GDBWTA */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		453896BF17931C2100B3087E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				453896CF17931C2100B3087E /* InfoPlist.strings in Resources */,
+				453896D717931C2100B3087E /* Default.png in Resources */,
+				453896D917931C2100B3087E /* Default@2x.png in Resources */,
+				453896DB17931C2100B3087E /* Default-568h@2x.png in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		453896BD17931C2100B3087E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				453896D117931C2100B3087E /* main.m in Sources */,
+				453896D517931C2100B3087E /* BTAppDelegate.m in Sources */,
+				453896EA17931C6C00B3087E /* BTViewController.m in Sources */,
+				453896EE17931C9400B3087E /* InfiniTabBar.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		453896CD17931C2100B3087E /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				453896CE17931C2100B3087E /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		453896E217931C2100B3087E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		453896E317931C2100B3087E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		453896E517931C2100B3087E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "GDBWTA/GDBWTA-Prefix.pch";
+				INFOPLIST_FILE = "GDBWTA/GDBWTA-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		453896E617931C2100B3087E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "GDBWTA/GDBWTA-Prefix.pch";
+				INFOPLIST_FILE = "GDBWTA/GDBWTA-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		453896BC17931C2100B3087E /* Build configuration list for PBXProject "GDBWTA" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				453896E217931C2100B3087E /* Debug */,
+				453896E317931C2100B3087E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		453896E417931C2100B3087E /* Build configuration list for PBXNativeTarget "GDBWTA" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				453896E517931C2100B3087E /* Debug */,
+				453896E617931C2100B3087E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 453896B917931C2100B3087E /* Project object */;
+}
