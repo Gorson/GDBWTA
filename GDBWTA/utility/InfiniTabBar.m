@@ -25,22 +25,22 @@
 		self.tabBars = [[[NSMutableArray alloc] init] autorelease];
 		
 		float x = 0.0;
-        NSLog(@"ceil: %f",ceil(items.count / 5.0));
-        double ceil_items = ceil(items.count / 5.0);
+        NSLog(@"ceil: %f",ceil(items.count / 6.0));
+        double ceil_items = ceil(items.count / 6.0);
         
 //        [self.tabBars addObject:btnnext];
-		for (double d = 0; d < ceil(items.count / 5.0); d ++) {
+		for (double d = 0; d < ceil(items.count / 6.0); d ++) {
             
 			UITabBar *tabBar = [[UITabBar alloc] initWithFrame:CGRectMake(x, 0.0, 320.0, 49.0)];
 			tabBar.delegate = self;
 			
 			int len = 0;
 			
-			for (int i = d * 5; i < d * 5 + 5; i ++)
+			for (int i = d * 6; i < d * 6 + 6; i ++)
 				if (i < items.count)
 					len ++;
 			
-			tabBar.items = [items objectsAtIndexes:[NSIndexSet indexSetWithIndexesInRange:NSMakeRange(d * 5, len)]];
+			tabBar.items = [items objectsAtIndexes:[NSIndexSet indexSetWithIndexesInRange:NSMakeRange(d * 6, len)]];
 			
 			[self addSubview:tabBar];
 			
@@ -130,14 +130,14 @@
 	for (UITabBar *tabBar in self.tabBars) {
 		int len = 0;
 		
-		for (int i = [self.tabBars indexOfObject:tabBar] * 5; i < [self.tabBars indexOfObject:tabBar] * 5 + 5; i ++)
+		for (int i = [self.tabBars indexOfObject:tabBar] * 6; i < [self.tabBars indexOfObject:tabBar] * 6 + 6; i ++)
 			if (i < items.count)
 				len ++;
 		
-		[tabBar setItems:[items objectsAtIndexes:[NSIndexSet indexSetWithIndexesInRange:NSMakeRange([self.tabBars indexOfObject:tabBar] * 5, len)]] animated:animated];
+		[tabBar setItems:[items objectsAtIndexes:[NSIndexSet indexSetWithIndexesInRange:NSMakeRange([self.tabBars indexOfObject:tabBar] * 6, len)]] animated:animated];
 	}
 	
-	self.contentSize = CGSizeMake(ceil(items.count / 5.0) * 320.0, 49.0);
+	self.contentSize = CGSizeMake(ceil(items.count / 6.0) * 320.0, 49.0);
 }
 
 - (int)currentTabBarTag {

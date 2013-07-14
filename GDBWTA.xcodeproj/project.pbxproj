@@ -7,6 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		450637F91793213E0054228A /* icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 450637F71793213E0054228A /* icon.png */; };
+		450637FA1793213E0054228A /* icon@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 450637F81793213E0054228A /* icon@2x.png */; };
+		450637FC179321540054228A /* icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 450637FB179321540054228A /* icon.png */; };
+		450637FE1793215B0054228A /* icon@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 450637FD1793215B0054228A /* icon@2x.png */; };
+		4506383E179329FC0054228A /* mainBackgound.png in Resources */ = {isa = PBXBuildFile; fileRef = 4506383C179329FC0054228A /* mainBackgound.png */; };
+		4506383F179329FC0054228A /* mainBackgound@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 4506383D179329FC0054228A /* mainBackgound@2x.png */; };
 		453896C517931C2100B3087E /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 453896C417931C2100B3087E /* UIKit.framework */; };
 		453896C717931C2100B3087E /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 453896C617931C2100B3087E /* Foundation.framework */; };
 		453896C917931C2100B3087E /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 453896C817931C2100B3087E /* CoreGraphics.framework */; };
@@ -16,11 +22,18 @@
 		453896D717931C2100B3087E /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = 453896D617931C2100B3087E /* Default.png */; };
 		453896D917931C2100B3087E /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 453896D817931C2100B3087E /* Default@2x.png */; };
 		453896DB17931C2100B3087E /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 453896DA17931C2100B3087E /* Default-568h@2x.png */; };
-		453896EA17931C6C00B3087E /* BTViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 453896E817931C6C00B3087E /* BTViewController.m */; };
-		453896EE17931C9400B3087E /* InfiniTabBar.m in Sources */ = {isa = PBXBuildFile; fileRef = 453896ED17931C9400B3087E /* InfiniTabBar.m */; };
+		453896F217931F1B00B3087E /* InfiniTabBar.m in Sources */ = {isa = PBXBuildFile; fileRef = 453896F117931F1B00B3087E /* InfiniTabBar.m */; };
+		453896F517931F2B00B3087E /* BTViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 453896F417931F2B00B3087E /* BTViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		450637F71793213E0054228A /* icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = icon.png; sourceTree = "<group>"; };
+		450637F81793213E0054228A /* icon@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icon@2x.png"; sourceTree = "<group>"; };
+		450637FB179321540054228A /* icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = icon.png; sourceTree = "<group>"; };
+		450637FD1793215B0054228A /* icon@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icon@2x.png"; sourceTree = "<group>"; };
+		4506383C179329FC0054228A /* mainBackgound.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = mainBackgound.png; sourceTree = "<group>"; };
+		4506383D179329FC0054228A /* mainBackgound@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "mainBackgound@2x.png"; sourceTree = "<group>"; };
+		4506384117932F970054228A /* BTConstant.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = BTConstant.h; path = "../../PEIZHENG/新增项目/JASidePanels/Handler/BTConstant.h"; sourceTree = "<group>"; };
 		453896C117931C2100B3087E /* GDBWTA.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GDBWTA.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		453896C417931C2100B3087E /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		453896C617931C2100B3087E /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -34,10 +47,10 @@
 		453896D617931C2100B3087E /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
 		453896D817931C2100B3087E /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x.png"; sourceTree = "<group>"; };
 		453896DA17931C2100B3087E /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
-		453896E817931C6C00B3087E /* BTViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BTViewController.m; sourceTree = "<group>"; };
-		453896E917931C6C00B3087E /* BTViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BTViewController.h; sourceTree = "<group>"; };
-		453896EC17931C9400B3087E /* InfiniTabBar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = InfiniTabBar.h; sourceTree = "<group>"; };
-		453896ED17931C9400B3087E /* InfiniTabBar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = InfiniTabBar.m; sourceTree = "<group>"; };
+		453896F017931F1B00B3087E /* InfiniTabBar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = InfiniTabBar.h; path = utility/InfiniTabBar.h; sourceTree = "<group>"; };
+		453896F117931F1B00B3087E /* InfiniTabBar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = InfiniTabBar.m; path = utility/InfiniTabBar.m; sourceTree = "<group>"; };
+		453896F317931F2B00B3087E /* BTViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = BTViewController.h; path = mainViewController/BTViewController.h; sourceTree = "<group>"; };
+		453896F417931F2B00B3087E /* BTViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = BTViewController.m; path = mainViewController/BTViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,9 +67,30 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		450637F61793213E0054228A /* image */ = {
+			isa = PBXGroup;
+			children = (
+				4506383C179329FC0054228A /* mainBackgound.png */,
+				4506383D179329FC0054228A /* mainBackgound@2x.png */,
+				450637F71793213E0054228A /* icon.png */,
+				450637F81793213E0054228A /* icon@2x.png */,
+			);
+			path = image;
+			sourceTree = "<group>";
+		};
+		4506384017932F870054228A /* Handler */ = {
+			isa = PBXGroup;
+			children = (
+				4506384117932F970054228A /* BTConstant.h */,
+			);
+			name = Handler;
+			sourceTree = "<group>";
+		};
 		453896B817931C2100B3087E = {
 			isa = PBXGroup;
 			children = (
+				450637FD1793215B0054228A /* icon@2x.png */,
+				450637FB179321540054228A /* icon.png */,
 				453896CA17931C2100B3087E /* GDBWTA */,
 				453896C317931C2100B3087E /* Frameworks */,
 				453896C217931C2100B3087E /* Products */,
@@ -84,6 +118,7 @@
 		453896CA17931C2100B3087E /* GDBWTA */ = {
 			isa = PBXGroup;
 			children = (
+				4506384017932F870054228A /* Handler */,
 				453896EB17931C7200B3087E /* Utility */,
 				453896E717931C4F00B3087E /* MainViewController */,
 				453896D317931C2100B3087E /* BTAppDelegate.h */,
@@ -96,6 +131,7 @@
 		453896CB17931C2100B3087E /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				450637F61793213E0054228A /* image */,
 				453896CC17931C2100B3087E /* GDBWTA-Info.plist */,
 				453896CD17931C2100B3087E /* InfoPlist.strings */,
 				453896D017931C2100B3087E /* main.m */,
@@ -110,8 +146,8 @@
 		453896E717931C4F00B3087E /* MainViewController */ = {
 			isa = PBXGroup;
 			children = (
-				453896E817931C6C00B3087E /* BTViewController.m */,
-				453896E917931C6C00B3087E /* BTViewController.h */,
+				453896F317931F2B00B3087E /* BTViewController.h */,
+				453896F417931F2B00B3087E /* BTViewController.m */,
 			);
 			name = MainViewController;
 			sourceTree = "<group>";
@@ -119,8 +155,8 @@
 		453896EB17931C7200B3087E /* Utility */ = {
 			isa = PBXGroup;
 			children = (
-				453896EC17931C9400B3087E /* InfiniTabBar.h */,
-				453896ED17931C9400B3087E /* InfiniTabBar.m */,
+				453896F017931F1B00B3087E /* InfiniTabBar.h */,
+				453896F117931F1B00B3087E /* InfiniTabBar.m */,
 			);
 			name = Utility;
 			sourceTree = "<group>";
@@ -181,6 +217,12 @@
 				453896D717931C2100B3087E /* Default.png in Resources */,
 				453896D917931C2100B3087E /* Default@2x.png in Resources */,
 				453896DB17931C2100B3087E /* Default-568h@2x.png in Resources */,
+				450637F91793213E0054228A /* icon.png in Resources */,
+				450637FA1793213E0054228A /* icon@2x.png in Resources */,
+				450637FC179321540054228A /* icon.png in Resources */,
+				450637FE1793215B0054228A /* icon@2x.png in Resources */,
+				4506383E179329FC0054228A /* mainBackgound.png in Resources */,
+				4506383F179329FC0054228A /* mainBackgound@2x.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -193,8 +235,8 @@
 			files = (
 				453896D117931C2100B3087E /* main.m in Sources */,
 				453896D517931C2100B3087E /* BTAppDelegate.m in Sources */,
-				453896EA17931C6C00B3087E /* BTViewController.m in Sources */,
-				453896EE17931C9400B3087E /* InfiniTabBar.m in Sources */,
+				453896F217931F1B00B3087E /* InfiniTabBar.m in Sources */,
+				453896F517931F2B00B3087E /* BTViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -309,6 +351,7 @@
 				453896E617931C2100B3087E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
