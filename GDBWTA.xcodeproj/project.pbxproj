@@ -115,11 +115,11 @@
 			path = "mainViewController/调酒模块";
 			sourceTree = "<group>";
 		};
-		18905D901793CD820015AD50 /*  咖啡模块 */ = {
+		18905D901793CD820015AD50 /* 咖啡模块 */ = {
 			isa = PBXGroup;
 			children = (
 			);
-			name = " 咖啡模块";
+			name = "咖啡模块";
 			path = "mainViewController/ 咖啡模块";
 			sourceTree = "<group>";
 		};
@@ -266,7 +266,7 @@
 		453896E717931C4F00B3087E /* MainViewController */ = {
 			isa = PBXGroup;
 			children = (
-				18905D901793CD820015AD50 /*  咖啡模块 */,
+				18905D901793CD820015AD50 /* 咖啡模块 */,
 				18905D911793CD820015AD50 /* 合作模块 */,
 				18905D921793CD820015AD50 /* 鉴赏模块 */,
 				18905D931793CD820015AD50 /* 品酒模块 */,

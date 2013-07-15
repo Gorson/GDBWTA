@@ -12,6 +12,13 @@
 
 @implementation BTAppDelegate
 
+/*
+ TCAppDelegate的单例对象
+ */
++ (BTAppDelegate *)sharedAppDelegate {
+    return (BTAppDelegate *)[[UIApplication sharedApplication] delegate];
+}
+
 - (void)dealloc
 {
     [_window release];

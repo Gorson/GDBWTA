@@ -13,7 +13,7 @@
 @synthesize bTabBar;
 
 - (id)initWithItems:(NSArray *)items {
-	self = [super initWithFrame:CGRectMake(0.0, 411.0, 320.0, 49.0)];
+	self = [super initWithFrame:CGRectMake(0.0, 431.0, 320.0, 49.0)];
     self.backgroundColor = [UIColor clearColor];
 	// TODO:
 	//self = [super initWithFrame:CGRectMake(self.superview.frame.origin.x + self.superview.frame.size.width - 320.0, self.superview.frame.origin.y + self.superview.frame.size.height - 49.0, 320.0, 49.0)];
