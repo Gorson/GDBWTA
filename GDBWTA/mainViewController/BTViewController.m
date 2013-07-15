@@ -4,6 +4,7 @@
 //
 
 #import "BTViewController.h"
+#import "BTCocktailViewController.h"
 
 @implementation BTViewController
 
@@ -264,7 +265,7 @@
 }
 
 - (void)scrollAnimatedToTabBar1 {
-	[self.tabBar scrollToTabBarWithTag:0 animated:YES];
+	[self.tabBar scrollToTabBarWithTag:0 animated:YES];    
 }
 
 - (void)selectItem8 {
@@ -284,7 +285,31 @@
 }
 
 - (void)infiniTabBar:(InfiniTabBar *)tabBar didSelectItemWithTag:(int)tag {
-    DLog(@"%D",tag + 1);
+    switch (tag) {
+        case 0:
+        {
+            BTCocktailViewController *btCocktailViewController = [[BTCocktailViewController alloc]init];
+            [self.navigationController pushViewController:btCocktailViewController animated:YES];
+        }
+            break;
+        case 1:
+            
+            break;
+        case 2:
+            
+            break;
+        case 3:
+            
+            break;
+        case 4:
+            
+            break;
+        case 5:
+            
+            break;
+        default:
+            break;
+    }
 }
 
 - (void)dealloc {
