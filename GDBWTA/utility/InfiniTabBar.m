@@ -14,6 +14,7 @@
 
 - (id)initWithItems:(NSArray *)items {
 	self = [super initWithFrame:CGRectMake(0.0, 411.0, 320.0, 49.0)];
+    self.backgroundColor = [UIColor clearColor];
 	// TODO:
 	//self = [super initWithFrame:CGRectMake(self.superview.frame.origin.x + self.superview.frame.size.width - 320.0, self.superview.frame.origin.y + self.superview.frame.size.height - 49.0, 320.0, 49.0)];
 	// Doesn't work. self is nil at this point.
@@ -33,7 +34,8 @@
             
 			UITabBar *tabBar = [[UITabBar alloc] initWithFrame:CGRectMake(x, 0.0, 320.0, 49.0)];
 			tabBar.delegate = self;
-			
+            [tabBar setBackgroundImage:[UIImage imageNamed:@"tabbar.png"]];
+            
 			int len = 0;
 			
 			for (int i = d * 6; i < d * 6 + 6; i ++)
@@ -110,13 +112,15 @@
 		if (count > 0) {
 			if (self.aTabBar == nil)
 				self.aTabBar = [[[UITabBar alloc] initWithFrame:CGRectMake(-320.0, 0.0, 320.0, 49.0)]autorelease];
+            [self.aTabBar setBackgroundColor:[UIColor clearColor]];
 			
-			[self addSubview:self.aTabBar];
+//			[self addSubview:self.aTabBar];
 			
 			if (self.bTabBar == nil)
 				self.bTabBar = [[[UITabBar alloc] initWithFrame:CGRectMake(count * 320.0, 0.0, 320.0, 49.0)] autorelease];
+            [self.bTabBar setBackgroundColor:[UIColor clearColor]];
 			
-			[self addSubview:self.bTabBar];
+//			[self addSubview:self.bTabBar];
 		}
 	} else {
 		[self.aTabBar removeFromSuperview];

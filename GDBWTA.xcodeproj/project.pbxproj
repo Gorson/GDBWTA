@@ -24,6 +24,8 @@
 		453896DB17931C2100B3087E /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 453896DA17931C2100B3087E /* Default-568h@2x.png */; };
 		453896F217931F1B00B3087E /* InfiniTabBar.m in Sources */ = {isa = PBXBuildFile; fileRef = 453896F117931F1B00B3087E /* InfiniTabBar.m */; };
 		453896F517931F2B00B3087E /* BTViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 453896F417931F2B00B3087E /* BTViewController.m */; };
+		458E10A41793A4630004C704 /* tabbar.png in Resources */ = {isa = PBXBuildFile; fileRef = 458E10A21793A4630004C704 /* tabbar.png */; };
+		458E10A51793A4630004C704 /* tabbar@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 458E10A31793A4630004C704 /* tabbar@2x.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -50,6 +52,8 @@
 		453896F117931F1B00B3087E /* InfiniTabBar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = InfiniTabBar.m; path = utility/InfiniTabBar.m; sourceTree = "<group>"; };
 		453896F317931F2B00B3087E /* BTViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = BTViewController.h; path = mainViewController/BTViewController.h; sourceTree = "<group>"; };
 		453896F417931F2B00B3087E /* BTViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = BTViewController.m; path = mainViewController/BTViewController.m; sourceTree = "<group>"; };
+		458E10A21793A4630004C704 /* tabbar.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = tabbar.png; sourceTree = "<group>"; };
+		458E10A31793A4630004C704 /* tabbar@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "tabbar@2x.png"; sourceTree = "<group>"; };
 		45CC680D17939C640008AD05 /* BTConstant.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BTConstant.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -70,6 +74,8 @@
 		450637F61793213E0054228A /* image */ = {
 			isa = PBXGroup;
 			children = (
+				458E10A21793A4630004C704 /* tabbar.png */,
+				458E10A31793A4630004C704 /* tabbar@2x.png */,
 				4506383C179329FC0054228A /* mainBackgound.png */,
 				4506383D179329FC0054228A /* mainBackgound@2x.png */,
 				450637F71793213E0054228A /* icon.png */,
@@ -223,6 +229,8 @@
 				450637FE1793215B0054228A /* icon@2x.png in Resources */,
 				4506383E179329FC0054228A /* mainBackgound.png in Resources */,
 				4506383F179329FC0054228A /* mainBackgound@2x.png in Resources */,
+				458E10A41793A4630004C704 /* tabbar.png in Resources */,
+				458E10A51793A4630004C704 /* tabbar@2x.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

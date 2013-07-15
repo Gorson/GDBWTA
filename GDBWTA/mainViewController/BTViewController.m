@@ -20,23 +20,22 @@
 
 - (void)initWithControl
 {
-    UIImageView *backgoundView = [[UIImageView alloc]initWithFrame:self.view.bounds];
+    UIImageView *backgoundView = [[UIImageView alloc]initWithFrame:CGRectMake(0.0f, 0.0f, IPHONE_WIDTH, IPHONE_HEIGHT - 49.0f)];
     [backgoundView setImage:[UIImage imageNamed:@"mainBackgound.png"]];
     [self.view addSubview:backgoundView];
     [self setNewItems];
 
 //    // Items
-//	UITabBarItem *favorites = [[UITabBarItem alloc] initWithTabBarSystemItem:UITabBarSystemItemFavorites tag:0];
-//	UITabBarItem *topRated = [[UITabBarItem alloc] initWithTabBarSystemItem:UITabBarSystemItemTopRated tag:1];
-//	UITabBarItem *featured = [[UITabBarItem alloc] initWithTabBarSystemItem:UITabBarSystemItemFeatured tag:2];
-//	UITabBarItem *recents = [[UITabBarItem alloc] initWithTabBarSystemItem:UITabBarSystemItemRecents tag:3];
-//	UITabBarItem *contacts = [[UITabBarItem alloc] initWithTabBarSystemItem:UITabBarSystemItemContacts tag:4];
-//	UITabBarItem *history = [[UITabBarItem alloc] initWithTabBarSystemItem:UITabBarSystemItemHistory tag:5];
-//	UITabBarItem *bookmarks = [[UITabBarItem alloc] initWithTabBarSystemItem:UITabBarSystemItemBookmarks tag:6];
-//	UITabBarItem *search = [[UITabBarItem alloc] initWithTabBarSystemItem:UITabBarSystemItemSearch tag:7];
-//	UITabBarItem *downloads = [[UITabBarItem alloc] initWithTabBarSystemItem:UITabBarSystemItemDownloads tag:8]; downloads.badgeValue = @"2";
-//	UITabBarItem *mostRecent = [[UITabBarItem alloc] initWithTabBarSystemItem:UITabBarSystemItemMostRecent tag:9];
-//	UITabBarItem *mostViewed = [[UITabBarItem alloc] initWithTabBarSystemItem:UITabBarSystemItemMostViewed tag:10];
+//	UITabBarItem *favorites = [[UITabBarItem alloc] initWithTitle:nil image:[UIImage imageNamed:@""] tag:1];
+//	UITabBarItem *topRated = [[UITabBarItem alloc] initWithTitle:nil image:[UIImage imageNamed:@""] tag:2];	UITabBarItem *featured = [[UITabBarItem alloc] initWithTitle:nil image:[UIImage imageNamed:@""] tag:0];
+//	UITabBarItem *recents = [[UITabBarItem alloc] initWithTitle:nil image:[UIImage imageNamed:@""] tag:3];
+//	UITabBarItem *contacts = [[UITabBarItem alloc] initWithTitle:nil image:[UIImage imageNamed:@""] tag:4];
+//	UITabBarItem *history = [[UITabBarItem alloc] initWithTitle:nil image:[UIImage imageNamed:@""] tag:5];
+//	UITabBarItem *bookmarks = [[UITabBarItem alloc] initWithTitle:nil image:[UIImage imageNamed:@""] tag:6];
+//	UITabBarItem *search = [[UITabBarItem alloc] initWithTitle:nil image:[UIImage imageNamed:@""] tag:7];
+//	UITabBarItem *downloads = [[UITabBarItem alloc] initWithTitle:nil image:[UIImage imageNamed:@""] tag:8];
+//	UITabBarItem *mostRecent = [[UITabBarItem alloc] initWithTitle:nil image:[UIImage imageNamed:@""] tag:9];
+//	UITabBarItem *mostViewed = [[UITabBarItem alloc] initWithTitle:nil image:[UIImage imageNamed:@""] tag:10];
 //	
 //	// Tab bar
 //	self.tabBar = [[InfiniTabBar alloc] initWithItems:[NSArray arrayWithObjects:favorites,
@@ -190,12 +189,15 @@
 }
 
 - (void)setNewItems {
-	UITabBarItem *featured = [[UITabBarItem alloc] initWithTabBarSystemItem:UITabBarSystemItemFeatured tag:0]; featured.badgeValue = @"1";
-	UITabBarItem *mostViewed = [[UITabBarItem alloc] initWithTabBarSystemItem:UITabBarSystemItemMostViewed tag:1];
-	UITabBarItem *search = [[UITabBarItem alloc] initWithTabBarSystemItem:UITabBarSystemItemSearch tag:2];
-	UITabBarItem *favorites = [[UITabBarItem alloc] initWithTabBarSystemItem:UITabBarSystemItemFavorites tag:3];
-	UITabBarItem *someThing = [[UITabBarItem alloc] initWithTabBarSystemItem:UITabBarSystemItemDownloads tag:4];
-    UITabBarItem *more = [[UITabBarItem alloc] initWithTabBarSystemItem:UITabBarSystemItemMore tag:5];
+	UITabBarItem *featured = [[UITabBarItem alloc] initWithTitle:nil image:[UIImage imageNamed:@""] tag:0];
+	UITabBarItem *mostViewed = [[UITabBarItem alloc] initWithTitle:nil image:[UIImage imageNamed:@""] tag:1];
+	UITabBarItem *search = [[UITabBarItem alloc] initWithTitle:nil image:[UIImage imageNamed:@""] tag:2];
+
+	UITabBarItem *favorites = [[UITabBarItem alloc] initWithTitle:nil image:[UIImage imageNamed:@""] tag:3];
+
+	UITabBarItem *someThing = [[UITabBarItem alloc] initWithTitle:nil image:[UIImage imageNamed:@""] tag:4];
+    UITabBarItem *more = [[UITabBarItem alloc] initWithTitle:nil image:[UIImage imageNamed:@""] tag:5];
+
 	self.tabBar = [[InfiniTabBar alloc] initWithItems:[NSArray arrayWithObject:featured]];
     [self.tabBar setScrollEnabled:NO];
 	[self.tabBar setItems:[NSArray arrayWithObjects:featured,
