@@ -51,7 +51,7 @@
     UIImageView *backgoundView = [[UIImageView alloc]initWithFrame:CGRectMake(0.0f, 0.0f, IPHONE_WIDTH, IPHONE_HEIGHT - 49.0f)];
     [backgoundView setImage:[UIImage imageNamed:@"mainBackgound.png"]];
     [self.view addSubview:backgoundView];
-//    [self setNewItems];
+    [self setNewItems];
     
     carousel = [[iCarousel alloc]initWithFrame:CGRectMake(0.0f, 0.0f, 320.0f, IPHONE_HEIGHT - 49.0f)];
 //    carousel.backgroundColor = REDColor;
@@ -61,49 +61,49 @@
     carousel.type = iCarouselTypeRotary;
     [self.view addSubview:carousel];
     
-    // Items
-	UITabBarItem *favorites = [[UITabBarItem alloc] initWithTitle:nil image:[UIImage imageNamed:@""] tag:1];
-	UITabBarItem *topRated = [[UITabBarItem alloc] initWithTitle:nil image:[UIImage imageNamed:@""] tag:2];	UITabBarItem *featured = [[UITabBarItem alloc] initWithTitle:nil image:[UIImage imageNamed:@""] tag:0];
-	UITabBarItem *recents = [[UITabBarItem alloc] initWithTitle:nil image:[UIImage imageNamed:@""] tag:3];
-	UITabBarItem *contacts = [[UITabBarItem alloc] initWithTitle:nil image:[UIImage imageNamed:@""] tag:4];
-	UITabBarItem *history = [[UITabBarItem alloc] initWithTitle:nil image:[UIImage imageNamed:@""] tag:5];
-	UITabBarItem *bookmarks = [[UITabBarItem alloc] initWithTitle:nil image:[UIImage imageNamed:@""] tag:6];
-	UITabBarItem *search = [[UITabBarItem alloc] initWithTitle:nil image:[UIImage imageNamed:@""] tag:7];
-	UITabBarItem *downloads = [[UITabBarItem alloc] initWithTitle:nil image:[UIImage imageNamed:@""] tag:8];
-	UITabBarItem *mostRecent = [[UITabBarItem alloc] initWithTitle:nil image:[UIImage imageNamed:@""] tag:9];
-	UITabBarItem *mostViewed = [[UITabBarItem alloc] initWithTitle:nil image:[UIImage imageNamed:@""] tag:10];
-	
-	// Tab bar
-	self.tabBar = [[InfiniTabBar alloc] initWithItems:[NSArray arrayWithObjects:favorites,
-													   topRated,
-													   featured,
-													   recents,
-													   contacts,
-													   history,
-													   bookmarks,
-													   search,
-													   downloads,
-													   mostRecent,
-													   mostViewed, nil]];
-	
-	[favorites release];
-	[topRated release];
-	[featured release];
-	[recents release];
-	[contacts release];
-	[history release];
-	[bookmarks release];
-	[search release];
-	[downloads release];
-	[mostRecent release];
-	[mostViewed release];
-	
-	// Don't show scroll indicator
-	self.tabBar.showsHorizontalScrollIndicator = NO;
-	self.tabBar.infiniTabBarDelegate = self;
-	self.tabBar.bounces = NO;
-	
-	[self.view addSubview:self.tabBar];
+//    // Items
+//	UITabBarItem *favorites = [[UITabBarItem alloc] initWithTitle:nil image:[UIImage imageNamed:@""] tag:1];
+//	UITabBarItem *topRated = [[UITabBarItem alloc] initWithTitle:nil image:[UIImage imageNamed:@""] tag:2];	UITabBarItem *featured = [[UITabBarItem alloc] initWithTitle:nil image:[UIImage imageNamed:@""] tag:0];
+//	UITabBarItem *recents = [[UITabBarItem alloc] initWithTitle:nil image:[UIImage imageNamed:@""] tag:3];
+//	UITabBarItem *contacts = [[UITabBarItem alloc] initWithTitle:nil image:[UIImage imageNamed:@""] tag:4];
+//	UITabBarItem *history = [[UITabBarItem alloc] initWithTitle:nil image:[UIImage imageNamed:@""] tag:5];
+//	UITabBarItem *bookmarks = [[UITabBarItem alloc] initWithTitle:nil image:[UIImage imageNamed:@""] tag:6];
+//	UITabBarItem *search = [[UITabBarItem alloc] initWithTitle:nil image:[UIImage imageNamed:@""] tag:7];
+//	UITabBarItem *downloads = [[UITabBarItem alloc] initWithTitle:nil image:[UIImage imageNamed:@""] tag:8];
+//	UITabBarItem *mostRecent = [[UITabBarItem alloc] initWithTitle:nil image:[UIImage imageNamed:@""] tag:9];
+//	UITabBarItem *mostViewed = [[UITabBarItem alloc] initWithTitle:nil image:[UIImage imageNamed:@""] tag:10];
+//	
+//	// Tab bar
+//	self.tabBar = [[InfiniTabBar alloc] initWithItems:[NSArray arrayWithObjects:favorites,
+//													   topRated,
+//													   featured,
+//													   recents,
+//													   contacts,
+//													   history,
+//													   bookmarks,
+//													   search,
+//													   downloads,
+//													   mostRecent,
+//													   mostViewed, nil]];
+//	
+//	[favorites release];
+//	[topRated release];
+//	[featured release];
+//	[recents release];
+//	[contacts release];
+//	[history release];
+//	[bookmarks release];
+//	[search release];
+//	[downloads release];
+//	[mostRecent release];
+//	[mostViewed release];
+//	
+//	// Don't show scroll indicator
+//	self.tabBar.showsHorizontalScrollIndicator = NO;
+//	self.tabBar.infiniTabBarDelegate = self;
+//	self.tabBar.bounces = NO;
+//	
+//	[self.view addSubview:self.tabBar];
 	
 // UI
 //    //回弹效果
