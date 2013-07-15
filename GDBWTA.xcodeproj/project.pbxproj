@@ -8,6 +8,13 @@
 
 /* Begin PBXBuildFile section */
 		18905D8E1793CCC60015AD50 /* BTCocktailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 18905D8D1793CCC60015AD50 /* BTCocktailViewController.m */; };
+		18905D971793CF830015AD50 /* BTSettingViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 18905D961793CF830015AD50 /* BTSettingViewController.m */; };
+		18905D9B1793D33A0015AD50 /* BTSettingCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 18905D9A1793D33A0015AD50 /* BTSettingCell.m */; };
+		18905DA11793D4B50015AD50 /* CloNetworkUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = 18905D9E1793D4B50015AD50 /* CloNetworkUtil.m */; };
+		18905DA21793D4B50015AD50 /* Reachability.m in Sources */ = {isa = PBXBuildFile; fileRef = 18905DA01793D4B50015AD50 /* Reachability.m */; };
+		18905DA41793D5D70015AD50 /* CFNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 18905DA31793D5D70015AD50 /* CFNetwork.framework */; };
+		18905DA61793D67E0015AD50 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 18905DA51793D67E0015AD50 /* SystemConfiguration.framework */; };
+		18905DAA1793D8E20015AD50 /* BTAboutusViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 18905DA91793D8E20015AD50 /* BTAboutusViewController.m */; };
 		450637F91793213E0054228A /* icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 450637F71793213E0054228A /* icon.png */; };
 		450637FA1793213E0054228A /* icon@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 450637F81793213E0054228A /* icon@2x.png */; };
 		450637FC179321540054228A /* icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 450637FB179321540054228A /* icon.png */; };
@@ -36,6 +43,18 @@
 /* Begin PBXFileReference section */
 		18905D8C1793CCC60015AD50 /* BTCocktailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BTCocktailViewController.h; sourceTree = "<group>"; };
 		18905D8D1793CCC60015AD50 /* BTCocktailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BTCocktailViewController.m; sourceTree = "<group>"; };
+		18905D951793CF830015AD50 /* BTSettingViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BTSettingViewController.h; sourceTree = "<group>"; };
+		18905D961793CF830015AD50 /* BTSettingViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BTSettingViewController.m; sourceTree = "<group>"; };
+		18905D991793D33A0015AD50 /* BTSettingCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BTSettingCell.h; sourceTree = "<group>"; };
+		18905D9A1793D33A0015AD50 /* BTSettingCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BTSettingCell.m; sourceTree = "<group>"; };
+		18905D9D1793D4B50015AD50 /* CloNetworkUtil.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CloNetworkUtil.h; sourceTree = "<group>"; };
+		18905D9E1793D4B50015AD50 /* CloNetworkUtil.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CloNetworkUtil.m; sourceTree = "<group>"; };
+		18905D9F1793D4B50015AD50 /* Reachability.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Reachability.h; sourceTree = "<group>"; };
+		18905DA01793D4B50015AD50 /* Reachability.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Reachability.m; sourceTree = "<group>"; };
+		18905DA31793D5D70015AD50 /* CFNetwork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CFNetwork.framework; path = System/Library/Frameworks/CFNetwork.framework; sourceTree = SDKROOT; };
+		18905DA51793D67E0015AD50 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
+		18905DA81793D8E20015AD50 /* BTAboutusViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BTAboutusViewController.h; sourceTree = "<group>"; };
+		18905DA91793D8E20015AD50 /* BTAboutusViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BTAboutusViewController.m; sourceTree = "<group>"; };
 		450637F71793213E0054228A /* icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = icon.png; sourceTree = "<group>"; };
 		450637F81793213E0054228A /* icon@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icon@2x.png"; sourceTree = "<group>"; };
 		450637FB179321540054228A /* icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = icon.png; path = ../../icon.png; sourceTree = "<group>"; };
@@ -74,6 +93,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				18905DA61793D67E0015AD50 /* SystemConfiguration.framework in Frameworks */,
+				18905DA41793D5D70015AD50 /* CFNetwork.framework in Frameworks */,
 				458E10B51793AB7E0004C704 /* QuartzCore.framework in Frameworks */,
 				453896C517931C2100B3087E /* UIKit.framework in Frameworks */,
 				453896C717931C2100B3087E /* Foundation.framework in Frameworks */,
@@ -129,9 +150,42 @@
 		18905D941793CD820015AD50 /* 设置模块 */ = {
 			isa = PBXGroup;
 			children = (
+				18905DA71793D8BF0015AD50 /* BTAboutusViewController */,
+				18905D981793D3270015AD50 /* SettingTableViewCell */,
+				18905D951793CF830015AD50 /* BTSettingViewController.h */,
+				18905D961793CF830015AD50 /* BTSettingViewController.m */,
 			);
 			name = "设置模块";
 			path = "mainViewController/设置模块";
+			sourceTree = "<group>";
+		};
+		18905D981793D3270015AD50 /* SettingTableViewCell */ = {
+			isa = PBXGroup;
+			children = (
+				18905D991793D33A0015AD50 /* BTSettingCell.h */,
+				18905D9A1793D33A0015AD50 /* BTSettingCell.m */,
+			);
+			path = SettingTableViewCell;
+			sourceTree = "<group>";
+		};
+		18905D9C1793D4B50015AD50 /* Reachability */ = {
+			isa = PBXGroup;
+			children = (
+				18905D9D1793D4B50015AD50 /* CloNetworkUtil.h */,
+				18905D9E1793D4B50015AD50 /* CloNetworkUtil.m */,
+				18905D9F1793D4B50015AD50 /* Reachability.h */,
+				18905DA01793D4B50015AD50 /* Reachability.m */,
+			);
+			path = Reachability;
+			sourceTree = "<group>";
+		};
+		18905DA71793D8BF0015AD50 /* BTAboutusViewController */ = {
+			isa = PBXGroup;
+			children = (
+				18905DA81793D8E20015AD50 /* BTAboutusViewController.h */,
+				18905DA91793D8E20015AD50 /* BTAboutusViewController.m */,
+			);
+			path = BTAboutusViewController;
 			sourceTree = "<group>";
 		};
 		450637F61793213E0054228A /* image */ = {
@@ -154,6 +208,7 @@
 		453896B817931C2100B3087E = {
 			isa = PBXGroup;
 			children = (
+				18905DA51793D67E0015AD50 /* SystemConfiguration.framework */,
 				453896CA17931C2100B3087E /* GDBWTA */,
 				453896C317931C2100B3087E /* Frameworks */,
 				453896C217931C2100B3087E /* Products */,
@@ -171,6 +226,7 @@
 		453896C317931C2100B3087E /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				18905DA31793D5D70015AD50 /* CFNetwork.framework */,
 				458E10B41793AB7E0004C704 /* QuartzCore.framework */,
 				453896C417931C2100B3087E /* UIKit.framework */,
 				453896C617931C2100B3087E /* Foundation.framework */,
@@ -225,6 +281,7 @@
 		458E10A61793AAFD0004C704 /* utility */ = {
 			isa = PBXGroup;
 			children = (
+				18905D9C1793D4B50015AD50 /* Reachability */,
 				458E10AA1793AB300004C704 /* iCarousel */,
 				458E10AD1793AB300004C704 /* InfiniTabBar */,
 			);
@@ -339,6 +396,11 @@
 				458E10B01793AB300004C704 /* iCarousel.m in Sources */,
 				458E10B11793AB300004C704 /* InfiniTabBar.m in Sources */,
 				18905D8E1793CCC60015AD50 /* BTCocktailViewController.m in Sources */,
+				18905D971793CF830015AD50 /* BTSettingViewController.m in Sources */,
+				18905D9B1793D33A0015AD50 /* BTSettingCell.m in Sources */,
+				18905DA11793D4B50015AD50 /* CloNetworkUtil.m in Sources */,
+				18905DA21793D4B50015AD50 /* Reachability.m in Sources */,
+				18905DAA1793D8E20015AD50 /* BTAboutusViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

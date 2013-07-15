@@ -4,16 +4,14 @@
 //
 
 #import "BTViewController.h"
-<<<<<<< HEAD
 #import "BTCocktailViewController.h"
-=======
+#import "BTSettingViewController.h"
 #define IS_IPAD (UI_USER_INTERFACE_IDIOM() == UIUserInterfaceIdiomPad)
 
 #define NUMBER_OF_ITEMS (IS_IPAD? 19: 12)
 #define NUMBER_OF_VISIBLE_ITEMS 25
 #define ITEM_SPACING 210.0f
 #define INCLUDE_PLACEHOLDERS YES
->>>>>>> 45fb2b166bfe42a5b0e409f7d8f3495d40f39c0e
 
 @implementation BTViewController
 
@@ -352,7 +350,11 @@
             
             break;
         case 5:
-            
+        {
+            BTSettingViewController *btsettingViewController = [[BTSettingViewController alloc]init];
+            [self.navigationController pushViewController:btsettingViewController animated:YES];
+            [btsettingViewController release];
+        }
             break;
         default:
             break;
