@@ -4,7 +4,16 @@
 //
 
 #import "BTViewController.h"
+<<<<<<< HEAD
 #import "BTCocktailViewController.h"
+=======
+#define IS_IPAD (UI_USER_INTERFACE_IDIOM() == UIUserInterfaceIdiomPad)
+
+#define NUMBER_OF_ITEMS (IS_IPAD? 19: 12)
+#define NUMBER_OF_VISIBLE_ITEMS 25
+#define ITEM_SPACING 210.0f
+#define INCLUDE_PLACEHOLDERS YES
+>>>>>>> 45fb2b166bfe42a5b0e409f7d8f3495d40f39c0e
 
 @implementation BTViewController
 
@@ -13,10 +22,32 @@
 // UI
 @synthesize dLabel;
 @synthesize fLabel;
+@synthesize carousel;
+// DATA
+@synthesize items;
+@synthesize wrap;
+
+#pragma mark
+#pragma mark - init method
+
+- (id)init
+{
+	if ((self = [super init]))
+    {
+        
+	}
+	return self;
+}
 
 - (void)initWithData
 {
-    
+    //set up data
+	wrap = YES;
+	self.items = [NSMutableArray array];
+	for (int i = 0; i < NUMBER_OF_ITEMS; i++)
+	{
+		[items addObject:[NSNumber numberWithInt:i]];
+	}
 }
 
 - (void)initWithControl
@@ -25,7 +56,15 @@
     [backgoundView setImage:[UIImage imageNamed:@"mainBackgound.png"]];
     [self.view addSubview:backgoundView];
     [self setNewItems];
-
+    
+    carousel = [[iCarousel alloc]initWithFrame:CGRectMake(0.0f, 0.0f, 320.0f, IPHONE_HEIGHT - 49.0f)];
+//    carousel.backgroundColor = REDColor;
+    carousel.decelerationRate = 0.5;
+    carousel.delegate = self;
+    carousel.dataSource = self;
+    carousel.type = iCarouselTypeRotary;
+    [self.view addSubview:carousel];
+    
 //    // Items
 //	UITabBarItem *favorites = [[UITabBarItem alloc] initWithTitle:nil image:[UIImage imageNamed:@""] tag:1];
 //	UITabBarItem *topRated = [[UITabBarItem alloc] initWithTitle:nil image:[UIImage imageNamed:@""] tag:2];	UITabBarItem *featured = [[UITabBarItem alloc] initWithTitle:nil image:[UIImage imageNamed:@""] tag:0];
@@ -174,11 +213,19 @@
 //	[self.view addSubview:gButton];
 }
 
+#pragma mark
+#pragma mark - ViewLifeCycle method
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-	[self initWithControl];
     [self initWithData];
+	[self initWithControl];
+}
+
+- (void)viewDidUnload
+{
+    [super viewDidUnload];
+    self.carousel = nil;
 }
 
 - (void)bounces:(UISwitch *)sender {
@@ -314,12 +361,111 @@
 
 - (void)dealloc {
 	// UI
+    carousel.delegate = nil;
+	carousel.dataSource = nil;
+    [carousel release];
+    
+    [items release];
+
 	[fLabel release];
 	[dLabel release];
-	
-	[tabBar release];
-	
+	[tabBar release];	
     [super dealloc];
+}
+
+#pragma mark -
+#pragma mark iCarousel methods
+
+- (NSUInteger)numberOfItemsInCarousel:(iCarousel *)carousel
+{
+    return [items count];
+}
+
+- (NSUInteger)numberOfVisibleItemsInCarousel:(iCarousel *)carousel
+{
+    //limit the number of items views loaded concurrently (for performance reasons)
+    //this also affects the appearance of circular-type carousels
+    return NUMBER_OF_VISIBLE_ITEMS;
+}
+
+- (UIView *)carousel:(iCarousel *)carousel viewForItemAtIndex:(NSUInteger)index reusingView:(UIView *)view
+{
+	UILabel *label = nil;
+	
+	//create new view if no view is available for recycling
+	if (view == nil)
+	{
+		view = [[[UIImageView alloc] initWithImage:[UIImage imageNamed:@"page.png"]] autorelease];
+		label = [[[UILabel alloc] initWithFrame:view.bounds] autorelease];
+		label.backgroundColor = [UIColor clearColor];
+		label.textAlignment = UITextAlignmentCenter;
+		label.font = [label.font fontWithSize:50];
+		[view addSubview:label];
+	}
+	else
+	{
+		label = [[view subviews] lastObject];
+	}
+	
+    //set label
+	label.text = [[items objectAtIndex:index] stringValue];
+	
+	return view;
+}
+
+- (NSUInteger)numberOfPlaceholdersInCarousel:(iCarousel *)carousel
+{
+	//note: placeholder views are only displayed on some carousels if wrapping is disabled
+	return INCLUDE_PLACEHOLDERS? 2: 0;
+}
+
+- (UIView *)carousel:(iCarousel *)carousel placeholderViewAtIndex:(NSUInteger)index reusingView:(UIView *)view
+{
+	UILabel *label = nil;
+	
+	//create new view if no view is available for recycling
+	if (view == nil)
+	{
+		view = [[[UIImageView alloc] initWithImage:[UIImage imageNamed:@"page.png"]] autorelease];
+		label = [[[UILabel alloc] initWithFrame:view.bounds] autorelease];
+		label.backgroundColor = [UIColor clearColor];
+		label.textAlignment = UITextAlignmentCenter;
+		label.font = [label.font fontWithSize:50.0f];
+		[view addSubview:label];
+	}
+	else
+	{
+		label = [[view subviews] lastObject];
+	}
+	
+    //set label
+	label.text = (index == 0)? @"[": @"]";
+	
+	return view;
+}
+
+- (CGFloat)carouselItemWidth:(iCarousel *)carousel
+{
+    //usually this should be slightly wider than the item views
+    return ITEM_SPACING;
+}
+
+- (CGFloat)carousel:(iCarousel *)carousel itemAlphaForOffset:(CGFloat)offset
+{
+	//set opacity based on distance from camera
+    return 1.0f - fminf(fmaxf(offset, 0.0f), 1.0f);
+}
+
+- (CATransform3D)carousel:(iCarousel *)_carousel itemTransformForOffset:(CGFloat)offset baseTransform:(CATransform3D)transform
+{
+    //implement 'flip3D' style carousel
+    transform = CATransform3DRotate(transform, M_PI / 8.0f, 0.0f, 1.0f, 0.0f);
+    return CATransform3DTranslate(transform, 0.0f, 0.0f, offset * carousel.itemWidth);
+}
+
+- (BOOL)carouselShouldWrap:(iCarousel *)carousel
+{
+    return wrap;
 }
 
 @end
