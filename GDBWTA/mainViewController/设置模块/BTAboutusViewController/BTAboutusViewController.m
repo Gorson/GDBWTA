@@ -23,6 +23,11 @@
     return self;
 }
 
+- (void)initWithControl
+{
+    
+}
+
 - (void)viewDidLoad
 {
     [super viewDidLoad];

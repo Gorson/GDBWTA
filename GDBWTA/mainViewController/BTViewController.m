@@ -5,10 +5,7 @@
 
 #import "BTViewController.h"
 #import "BTCocktailViewController.h"
-<<<<<<< HEAD
 #import "BTSettingViewController.h"
-=======
->>>>>>> f58c40f40c1262de02d8d93770a735c689fd151e
 #define IS_IPAD (UI_USER_INTERFACE_IDIOM() == UIUserInterfaceIdiomPad)
 
 #define NUMBER_OF_ITEMS (IS_IPAD? 19: 12)
@@ -16,10 +13,13 @@
 #define ITEM_SPACING 210.0f
 #define INCLUDE_PLACEHOLDERS YES
 
+@interface BTViewController()
+@property (nonatomic ,retain)BTSettingViewController *settingViewController;
+
+@end
+
 @implementation BTViewController
-
 @synthesize tabBar;
-
 // UI
 @synthesize dLabel;
 @synthesize fLabel;
@@ -27,7 +27,7 @@
 // DATA
 @synthesize items;
 @synthesize wrap;
-
+@synthesize settingViewController;
 #pragma mark
 #pragma mark - init method
 
@@ -267,7 +267,7 @@
 	self.tabBar.infiniTabBarDelegate = self;
 	self.tabBar.bounces = NO;
 	
-	[theApp.window addSubview:self.tabBar];
+	[self.view addSubview:self.tabBar];
 }
 
 - (void)setOldItemsAnimated {
@@ -354,9 +354,10 @@
             break;
         case 5:
         {
-            BTSettingViewController *btsettingViewController = [[BTSettingViewController alloc]init];
-            [self.navigationController pushViewController:btsettingViewController animated:YES];
-            [btsettingViewController release];
+            BTSettingViewController *btsettingViewController = [BTSettingViewController sharedInstance];
+            self.settingViewController = btsettingViewController;
+            [self.navigationController pushViewController:settingViewController animated:YES];
+//            [btsettingViewController release];
         }
             break;
         default:
@@ -369,9 +370,10 @@
     carousel.delegate = nil;
 	carousel.dataSource = nil;
     [carousel release];
-    
-    [items release];
 
+    self.settingViewController = nil;
+    [settingViewController release];
+    [items release];
 	[fLabel release];
 	[dLabel release];
 	[tabBar release];	

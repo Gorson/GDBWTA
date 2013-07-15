@@ -7,11 +7,16 @@
 //
 
 #import <UIKit/UIKit.h>
+#import <AVFoundation/AVFoundation.h>
 
 @interface BTSettingViewController : UIViewController<UITableViewDataSource,UITableViewDelegate>
 {
     UITableView *settingtableView;
     NSMutableArray *contentArray;
+    AVAudioPlayer *player;
+    NSUserDefaults *userdefaults;
 }
+- (void)playmusic;
++ (BTSettingViewController *) sharedInstance;
 
 @end

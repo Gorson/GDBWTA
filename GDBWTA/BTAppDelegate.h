@@ -8,6 +8,7 @@
 
 #import <UIKit/UIKit.h>
 #define theApp [BTAppDelegate sharedAppDelegate]    // 宏，单例对象
+#define userdefault [NSUserDefaults standardUserDefaults]
 
 @class BTViewController;
 @interface BTAppDelegate : UIResponder <UIApplicationDelegate>

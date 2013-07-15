@@ -9,5 +9,11 @@
 #import <UIKit/UIKit.h>
 
 @interface BTSettingCell : UITableViewCell
+{
+    UILabel *_titleLabel;
+    UILabel *_DetailLabel;
+}
+@property(nonatomic,retain)UILabel *titleLabel;
+@property(nonatomic,retain)UILabel *DetailLabel;
 
 @end

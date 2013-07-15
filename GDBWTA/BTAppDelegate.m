@@ -9,6 +9,7 @@
 #import "BTAppDelegate.h"
 
 #import "BTViewController.h"
+#import "BTSettingViewController.h"
 
 @implementation BTAppDelegate
 
@@ -30,10 +31,15 @@
 {
     self.window = [[[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]] autorelease];
     // Override point for customization after application launch.
+    
+    BTSettingViewController *settingViewController = [BTSettingViewController sharedInstance];
+    [settingViewController playmusic];
     self.viewController = [[[BTViewController alloc] init]autorelease];
     UINavigationController *nav =[[UINavigationController alloc]initWithRootViewController:self.viewController];
     self.window.rootViewController = nav;
     [nav.navigationBar setHidden:YES];
+    
+    
 
     [self.window makeKeyAndVisible];
     return YES;

@@ -15,6 +15,18 @@
 		18905DA41793D5D70015AD50 /* CFNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 18905DA31793D5D70015AD50 /* CFNetwork.framework */; };
 		18905DA61793D67E0015AD50 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 18905DA51793D67E0015AD50 /* SystemConfiguration.framework */; };
 		18905DAA1793D8E20015AD50 /* BTAboutusViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 18905DA91793D8E20015AD50 /* BTAboutusViewController.m */; };
+		18905DAE1793E31E0015AD50 /* CustomAlertView.m in Sources */ = {isa = PBXBuildFile; fileRef = 18905DAD1793E31E0015AD50 /* CustomAlertView.m */; };
+		18905DB81793E3E00015AD50 /* alert-black-button.png in Resources */ = {isa = PBXBuildFile; fileRef = 18905DB01793E3E00015AD50 /* alert-black-button.png */; };
+		18905DB91793E3E00015AD50 /* alert-black-button@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 18905DB11793E3E00015AD50 /* alert-black-button@2x.png */; };
+		18905DBA1793E3E00015AD50 /* alert-gray-button.png in Resources */ = {isa = PBXBuildFile; fileRef = 18905DB21793E3E00015AD50 /* alert-gray-button.png */; };
+		18905DBB1793E3E00015AD50 /* alert-gray-button@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 18905DB31793E3E00015AD50 /* alert-gray-button@2x.png */; };
+		18905DBC1793E3E00015AD50 /* alert-red-button.png in Resources */ = {isa = PBXBuildFile; fileRef = 18905DB41793E3E00015AD50 /* alert-red-button.png */; };
+		18905DBD1793E3E00015AD50 /* alert-red-button@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 18905DB51793E3E00015AD50 /* alert-red-button@2x.png */; };
+		18905DBE1793E3E00015AD50 /* alert-window.png in Resources */ = {isa = PBXBuildFile; fileRef = 18905DB61793E3E00015AD50 /* alert-window.png */; };
+		18905DBF1793E3E00015AD50 /* alert-window@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 18905DB71793E3E00015AD50 /* alert-window@2x.png */; };
+		18905DC11793EC210015AD50 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 18905DC01793EC200015AD50 /* AVFoundation.framework */; };
+		18905DC31793EC280015AD50 /* MediaPlayer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 18905DC21793EC280015AD50 /* MediaPlayer.framework */; };
+		18905DC51793FEFD0015AD50 /* 爱很简单.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 18905DC41793FEFD0015AD50 /* 爱很简单.mp3 */; };
 		450637F91793213E0054228A /* icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 450637F71793213E0054228A /* icon.png */; };
 		450637FA1793213E0054228A /* icon@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 450637F81793213E0054228A /* icon@2x.png */; };
 		450637FC179321540054228A /* icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 450637FB179321540054228A /* icon.png */; };
@@ -55,6 +67,19 @@
 		18905DA51793D67E0015AD50 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
 		18905DA81793D8E20015AD50 /* BTAboutusViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BTAboutusViewController.h; sourceTree = "<group>"; };
 		18905DA91793D8E20015AD50 /* BTAboutusViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BTAboutusViewController.m; sourceTree = "<group>"; };
+		18905DAC1793E31E0015AD50 /* CustomAlertView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CustomAlertView.h; sourceTree = "<group>"; };
+		18905DAD1793E31E0015AD50 /* CustomAlertView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CustomAlertView.m; sourceTree = "<group>"; };
+		18905DB01793E3E00015AD50 /* alert-black-button.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "alert-black-button.png"; sourceTree = "<group>"; };
+		18905DB11793E3E00015AD50 /* alert-black-button@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "alert-black-button@2x.png"; sourceTree = "<group>"; };
+		18905DB21793E3E00015AD50 /* alert-gray-button.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "alert-gray-button.png"; sourceTree = "<group>"; };
+		18905DB31793E3E00015AD50 /* alert-gray-button@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "alert-gray-button@2x.png"; sourceTree = "<group>"; };
+		18905DB41793E3E00015AD50 /* alert-red-button.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "alert-red-button.png"; sourceTree = "<group>"; };
+		18905DB51793E3E00015AD50 /* alert-red-button@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "alert-red-button@2x.png"; sourceTree = "<group>"; };
+		18905DB61793E3E00015AD50 /* alert-window.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "alert-window.png"; sourceTree = "<group>"; };
+		18905DB71793E3E00015AD50 /* alert-window@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "alert-window@2x.png"; sourceTree = "<group>"; };
+		18905DC01793EC200015AD50 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
+		18905DC21793EC280015AD50 /* MediaPlayer.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MediaPlayer.framework; path = System/Library/Frameworks/MediaPlayer.framework; sourceTree = SDKROOT; };
+		18905DC41793FEFD0015AD50 /* 爱很简单.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "爱很简单.mp3"; sourceTree = "<group>"; };
 		450637F71793213E0054228A /* icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = icon.png; sourceTree = "<group>"; };
 		450637F81793213E0054228A /* icon@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icon@2x.png"; sourceTree = "<group>"; };
 		450637FB179321540054228A /* icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = icon.png; path = ../../icon.png; sourceTree = "<group>"; };
@@ -93,6 +118,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				18905DC31793EC280015AD50 /* MediaPlayer.framework in Frameworks */,
+				18905DC11793EC210015AD50 /* AVFoundation.framework in Frameworks */,
 				18905DA61793D67E0015AD50 /* SystemConfiguration.framework in Frameworks */,
 				18905DA41793D5D70015AD50 /* CFNetwork.framework in Frameworks */,
 				458E10B51793AB7E0004C704 /* QuartzCore.framework in Frameworks */,
@@ -188,9 +215,35 @@
 			path = BTAboutusViewController;
 			sourceTree = "<group>";
 		};
+		18905DAB1793E31E0015AD50 /* CustomAlertView */ = {
+			isa = PBXGroup;
+			children = (
+				18905DAF1793E3E00015AD50 /* image */,
+				18905DAC1793E31E0015AD50 /* CustomAlertView.h */,
+				18905DAD1793E31E0015AD50 /* CustomAlertView.m */,
+			);
+			path = CustomAlertView;
+			sourceTree = "<group>";
+		};
+		18905DAF1793E3E00015AD50 /* image */ = {
+			isa = PBXGroup;
+			children = (
+				18905DB01793E3E00015AD50 /* alert-black-button.png */,
+				18905DB11793E3E00015AD50 /* alert-black-button@2x.png */,
+				18905DB21793E3E00015AD50 /* alert-gray-button.png */,
+				18905DB31793E3E00015AD50 /* alert-gray-button@2x.png */,
+				18905DB41793E3E00015AD50 /* alert-red-button.png */,
+				18905DB51793E3E00015AD50 /* alert-red-button@2x.png */,
+				18905DB61793E3E00015AD50 /* alert-window.png */,
+				18905DB71793E3E00015AD50 /* alert-window@2x.png */,
+			);
+			path = image;
+			sourceTree = "<group>";
+		};
 		450637F61793213E0054228A /* image */ = {
 			isa = PBXGroup;
 			children = (
+				18905DC41793FEFD0015AD50 /* 爱很简单.mp3 */,
 				450637FD1793215B0054228A /* icon@2x.png */,
 				450637FB179321540054228A /* icon.png */,
 				458E10B61793B43F0004C704 /* background.png */,
@@ -208,7 +261,6 @@
 		453896B817931C2100B3087E = {
 			isa = PBXGroup;
 			children = (
-				18905DA51793D67E0015AD50 /* SystemConfiguration.framework */,
 				453896CA17931C2100B3087E /* GDBWTA */,
 				453896C317931C2100B3087E /* Frameworks */,
 				453896C217931C2100B3087E /* Products */,
@@ -226,6 +278,9 @@
 		453896C317931C2100B3087E /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				18905DC21793EC280015AD50 /* MediaPlayer.framework */,
+				18905DC01793EC200015AD50 /* AVFoundation.framework */,
+				18905DA51793D67E0015AD50 /* SystemConfiguration.framework */,
 				18905DA31793D5D70015AD50 /* CFNetwork.framework */,
 				458E10B41793AB7E0004C704 /* QuartzCore.framework */,
 				453896C417931C2100B3087E /* UIKit.framework */,
@@ -281,6 +336,7 @@
 		458E10A61793AAFD0004C704 /* utility */ = {
 			isa = PBXGroup;
 			children = (
+				18905DAB1793E31E0015AD50 /* CustomAlertView */,
 				18905D9C1793D4B50015AD50 /* Reachability */,
 				458E10AA1793AB300004C704 /* iCarousel */,
 				458E10AD1793AB300004C704 /* InfiniTabBar */,
@@ -380,6 +436,15 @@
 				458E10A51793A4630004C704 /* tabbar@2x.png in Resources */,
 				458E10B81793B43F0004C704 /* background.png in Resources */,
 				458E10B91793B43F0004C704 /* page.png in Resources */,
+				18905DB81793E3E00015AD50 /* alert-black-button.png in Resources */,
+				18905DB91793E3E00015AD50 /* alert-black-button@2x.png in Resources */,
+				18905DBA1793E3E00015AD50 /* alert-gray-button.png in Resources */,
+				18905DBB1793E3E00015AD50 /* alert-gray-button@2x.png in Resources */,
+				18905DBC1793E3E00015AD50 /* alert-red-button.png in Resources */,
+				18905DBD1793E3E00015AD50 /* alert-red-button@2x.png in Resources */,
+				18905DBE1793E3E00015AD50 /* alert-window.png in Resources */,
+				18905DBF1793E3E00015AD50 /* alert-window@2x.png in Resources */,
+				18905DC51793FEFD0015AD50 /* 爱很简单.mp3 in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -401,6 +466,7 @@
 				18905DA11793D4B50015AD50 /* CloNetworkUtil.m in Sources */,
 				18905DA21793D4B50015AD50 /* Reachability.m in Sources */,
 				18905DAA1793D8E20015AD50 /* BTAboutusViewController.m in Sources */,
+				18905DAE1793E31E0015AD50 /* CustomAlertView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
