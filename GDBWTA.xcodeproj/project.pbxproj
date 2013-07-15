@@ -23,17 +23,14 @@
 		453896D917931C2100B3087E /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 453896D817931C2100B3087E /* Default@2x.png */; };
 		453896DB17931C2100B3087E /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 453896DA17931C2100B3087E /* Default-568h@2x.png */; };
 		453896F517931F2B00B3087E /* BTViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 453896F417931F2B00B3087E /* BTViewController.m */; };
+		4566A7861793CB2300B0ED5A /* BTCocktailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4566A7851793CB2300B0ED5A /* BTCocktailViewController.m */; };
 		458E10A41793A4630004C704 /* tabbar.png in Resources */ = {isa = PBXBuildFile; fileRef = 458E10A21793A4630004C704 /* tabbar.png */; };
 		458E10A51793A4630004C704 /* tabbar@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 458E10A31793A4630004C704 /* tabbar@2x.png */; };
-<<<<<<< HEAD
-		45C11BBF1793C8510064F79E /* BTCocktailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 45C11BBE1793C8510064F79E /* BTCocktailViewController.m */; };
-=======
 		458E10B01793AB300004C704 /* iCarousel.m in Sources */ = {isa = PBXBuildFile; fileRef = 458E10AC1793AB300004C704 /* iCarousel.m */; settings = {COMPILER_FLAGS = "-fobjc-arc"; }; };
 		458E10B11793AB300004C704 /* InfiniTabBar.m in Sources */ = {isa = PBXBuildFile; fileRef = 458E10AF1793AB300004C704 /* InfiniTabBar.m */; };
 		458E10B51793AB7E0004C704 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 458E10B41793AB7E0004C704 /* QuartzCore.framework */; };
 		458E10B81793B43F0004C704 /* background.png in Resources */ = {isa = PBXBuildFile; fileRef = 458E10B61793B43F0004C704 /* background.png */; };
 		458E10B91793B43F0004C704 /* page.png in Resources */ = {isa = PBXBuildFile; fileRef = 458E10B71793B43F0004C704 /* page.png */; };
->>>>>>> 45fb2b166bfe42a5b0e409f7d8f3495d40f39c0e
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -58,12 +55,10 @@
 		453896DA17931C2100B3087E /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
 		453896F317931F2B00B3087E /* BTViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = BTViewController.h; path = mainViewController/BTViewController.h; sourceTree = "<group>"; };
 		453896F417931F2B00B3087E /* BTViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = BTViewController.m; path = mainViewController/BTViewController.m; sourceTree = "<group>"; };
+		4566A7841793CB2300B0ED5A /* BTCocktailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = BTCocktailViewController.h; path = GDBWTA/BTCocktailViewController.h; sourceTree = SOURCE_ROOT; };
+		4566A7851793CB2300B0ED5A /* BTCocktailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = BTCocktailViewController.m; path = GDBWTA/BTCocktailViewController.m; sourceTree = SOURCE_ROOT; };
 		458E10A21793A4630004C704 /* tabbar.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = tabbar.png; sourceTree = "<group>"; };
 		458E10A31793A4630004C704 /* tabbar@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "tabbar@2x.png"; sourceTree = "<group>"; };
-<<<<<<< HEAD
-		45C11BBD1793C8510064F79E /* BTCocktailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BTCocktailViewController.h; sourceTree = "<group>"; };
-		45C11BBE1793C8510064F79E /* BTCocktailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BTCocktailViewController.m; sourceTree = "<group>"; };
-=======
 		458E10AB1793AB300004C704 /* iCarousel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = iCarousel.h; sourceTree = "<group>"; };
 		458E10AC1793AB300004C704 /* iCarousel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = iCarousel.m; sourceTree = "<group>"; };
 		458E10AE1793AB300004C704 /* InfiniTabBar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = InfiniTabBar.h; sourceTree = "<group>"; };
@@ -71,7 +66,6 @@
 		458E10B41793AB7E0004C704 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
 		458E10B61793B43F0004C704 /* background.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = background.png; sourceTree = "<group>"; };
 		458E10B71793B43F0004C704 /* page.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = page.png; sourceTree = "<group>"; };
->>>>>>> 45fb2b166bfe42a5b0e409f7d8f3495d40f39c0e
 		45CC680D17939C640008AD05 /* BTConstant.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BTConstant.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -93,13 +87,10 @@
 		450637F61793213E0054228A /* image */ = {
 			isa = PBXGroup;
 			children = (
-<<<<<<< HEAD
 				450637FD1793215B0054228A /* icon@2x.png */,
 				450637FB179321540054228A /* icon.png */,
-=======
 				458E10B61793B43F0004C704 /* background.png */,
 				458E10B71793B43F0004C704 /* page.png */,
->>>>>>> 45fb2b166bfe42a5b0e409f7d8f3495d40f39c0e
 				458E10A21793A4630004C704 /* tabbar.png */,
 				458E10A31793A4630004C704 /* tabbar@2x.png */,
 				4506383C179329FC0054228A /* mainBackgound.png */,
@@ -113,7 +104,7 @@
 		453896B817931C2100B3087E = {
 			isa = PBXGroup;
 			children = (
-				45C11BBC1793C5CB0064F79E /* 调酒模块 */,
+				4566A7801793CAB600B0ED5A /* 调酒模块 */,
 				453896CA17931C2100B3087E /* GDBWTA */,
 				453896C317931C2100B3087E /* Frameworks */,
 				453896C217931C2100B3087E /* Products */,
@@ -176,6 +167,15 @@
 			name = MainViewController;
 			sourceTree = "<group>";
 		};
+		4566A7801793CAB600B0ED5A /* 调酒模块 */ = {
+			isa = PBXGroup;
+			children = (
+				4566A7841793CB2300B0ED5A /* BTCocktailViewController.h */,
+				4566A7851793CB2300B0ED5A /* BTCocktailViewController.m */,
+			);
+			path = "调酒模块";
+			sourceTree = "<group>";
+		};
 		458E10A61793AAFD0004C704 /* utility */ = {
 			isa = PBXGroup;
 			children = (
@@ -201,15 +201,6 @@
 				458E10AF1793AB300004C704 /* InfiniTabBar.m */,
 			);
 			path = InfiniTabBar;
-			sourceTree = "<group>";
-		};
-		45C11BBC1793C5CB0064F79E /* 调酒模块 */ = {
-			isa = PBXGroup;
-			children = (
-				45C11BBD1793C8510064F79E /* BTCocktailViewController.h */,
-				45C11BBE1793C8510064F79E /* BTCocktailViewController.m */,
-			);
-			path = "调酒模块";
 			sourceTree = "<group>";
 		};
 		45CC680C17939C640008AD05 /* Handler */ = {
@@ -299,12 +290,9 @@
 				453896D117931C2100B3087E /* main.m in Sources */,
 				453896D517931C2100B3087E /* BTAppDelegate.m in Sources */,
 				453896F517931F2B00B3087E /* BTViewController.m in Sources */,
-<<<<<<< HEAD
-				45C11BBF1793C8510064F79E /* BTCocktailViewController.m in Sources */,
-=======
 				458E10B01793AB300004C704 /* iCarousel.m in Sources */,
 				458E10B11793AB300004C704 /* InfiniTabBar.m in Sources */,
->>>>>>> 45fb2b166bfe42a5b0e409f7d8f3495d40f39c0e
+				4566A7861793CB2300B0ED5A /* BTCocktailViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
