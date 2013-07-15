@@ -22,10 +22,14 @@
 		453896D717931C2100B3087E /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = 453896D617931C2100B3087E /* Default.png */; };
 		453896D917931C2100B3087E /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 453896D817931C2100B3087E /* Default@2x.png */; };
 		453896DB17931C2100B3087E /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 453896DA17931C2100B3087E /* Default-568h@2x.png */; };
-		453896F217931F1B00B3087E /* InfiniTabBar.m in Sources */ = {isa = PBXBuildFile; fileRef = 453896F117931F1B00B3087E /* InfiniTabBar.m */; };
 		453896F517931F2B00B3087E /* BTViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 453896F417931F2B00B3087E /* BTViewController.m */; };
 		458E10A41793A4630004C704 /* tabbar.png in Resources */ = {isa = PBXBuildFile; fileRef = 458E10A21793A4630004C704 /* tabbar.png */; };
 		458E10A51793A4630004C704 /* tabbar@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 458E10A31793A4630004C704 /* tabbar@2x.png */; };
+		458E10B01793AB300004C704 /* iCarousel.m in Sources */ = {isa = PBXBuildFile; fileRef = 458E10AC1793AB300004C704 /* iCarousel.m */; settings = {COMPILER_FLAGS = "-fobjc-arc"; }; };
+		458E10B11793AB300004C704 /* InfiniTabBar.m in Sources */ = {isa = PBXBuildFile; fileRef = 458E10AF1793AB300004C704 /* InfiniTabBar.m */; };
+		458E10B51793AB7E0004C704 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 458E10B41793AB7E0004C704 /* QuartzCore.framework */; };
+		458E10B81793B43F0004C704 /* background.png in Resources */ = {isa = PBXBuildFile; fileRef = 458E10B61793B43F0004C704 /* background.png */; };
+		458E10B91793B43F0004C704 /* page.png in Resources */ = {isa = PBXBuildFile; fileRef = 458E10B71793B43F0004C704 /* page.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -48,12 +52,17 @@
 		453896D617931C2100B3087E /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
 		453896D817931C2100B3087E /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x.png"; sourceTree = "<group>"; };
 		453896DA17931C2100B3087E /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
-		453896F017931F1B00B3087E /* InfiniTabBar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = InfiniTabBar.h; path = utility/InfiniTabBar.h; sourceTree = "<group>"; };
-		453896F117931F1B00B3087E /* InfiniTabBar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = InfiniTabBar.m; path = utility/InfiniTabBar.m; sourceTree = "<group>"; };
 		453896F317931F2B00B3087E /* BTViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = BTViewController.h; path = mainViewController/BTViewController.h; sourceTree = "<group>"; };
 		453896F417931F2B00B3087E /* BTViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = BTViewController.m; path = mainViewController/BTViewController.m; sourceTree = "<group>"; };
 		458E10A21793A4630004C704 /* tabbar.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = tabbar.png; sourceTree = "<group>"; };
 		458E10A31793A4630004C704 /* tabbar@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "tabbar@2x.png"; sourceTree = "<group>"; };
+		458E10AB1793AB300004C704 /* iCarousel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = iCarousel.h; sourceTree = "<group>"; };
+		458E10AC1793AB300004C704 /* iCarousel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = iCarousel.m; sourceTree = "<group>"; };
+		458E10AE1793AB300004C704 /* InfiniTabBar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = InfiniTabBar.h; sourceTree = "<group>"; };
+		458E10AF1793AB300004C704 /* InfiniTabBar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = InfiniTabBar.m; sourceTree = "<group>"; };
+		458E10B41793AB7E0004C704 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		458E10B61793B43F0004C704 /* background.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = background.png; sourceTree = "<group>"; };
+		458E10B71793B43F0004C704 /* page.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = page.png; sourceTree = "<group>"; };
 		45CC680D17939C640008AD05 /* BTConstant.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BTConstant.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -62,6 +71,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				458E10B51793AB7E0004C704 /* QuartzCore.framework in Frameworks */,
 				453896C517931C2100B3087E /* UIKit.framework in Frameworks */,
 				453896C717931C2100B3087E /* Foundation.framework in Frameworks */,
 				453896C917931C2100B3087E /* CoreGraphics.framework in Frameworks */,
@@ -74,6 +84,8 @@
 		450637F61793213E0054228A /* image */ = {
 			isa = PBXGroup;
 			children = (
+				458E10B61793B43F0004C704 /* background.png */,
+				458E10B71793B43F0004C704 /* page.png */,
 				458E10A21793A4630004C704 /* tabbar.png */,
 				458E10A31793A4630004C704 /* tabbar@2x.png */,
 				4506383C179329FC0054228A /* mainBackgound.png */,
@@ -106,6 +118,7 @@
 		453896C317931C2100B3087E /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				458E10B41793AB7E0004C704 /* QuartzCore.framework */,
 				453896C417931C2100B3087E /* UIKit.framework */,
 				453896C617931C2100B3087E /* Foundation.framework */,
 				453896C817931C2100B3087E /* CoreGraphics.framework */,
@@ -116,8 +129,8 @@
 		453896CA17931C2100B3087E /* GDBWTA */ = {
 			isa = PBXGroup;
 			children = (
+				458E10A61793AAFD0004C704 /* utility */,
 				45CC680C17939C640008AD05 /* Handler */,
-				453896EB17931C7200B3087E /* Utility */,
 				453896E717931C4F00B3087E /* MainViewController */,
 				453896D317931C2100B3087E /* BTAppDelegate.h */,
 				453896D417931C2100B3087E /* BTAppDelegate.m */,
@@ -150,13 +163,31 @@
 			name = MainViewController;
 			sourceTree = "<group>";
 		};
-		453896EB17931C7200B3087E /* Utility */ = {
+		458E10A61793AAFD0004C704 /* utility */ = {
 			isa = PBXGroup;
 			children = (
-				453896F017931F1B00B3087E /* InfiniTabBar.h */,
-				453896F117931F1B00B3087E /* InfiniTabBar.m */,
+				458E10AA1793AB300004C704 /* iCarousel */,
+				458E10AD1793AB300004C704 /* InfiniTabBar */,
 			);
-			name = Utility;
+			path = utility;
+			sourceTree = "<group>";
+		};
+		458E10AA1793AB300004C704 /* iCarousel */ = {
+			isa = PBXGroup;
+			children = (
+				458E10AB1793AB300004C704 /* iCarousel.h */,
+				458E10AC1793AB300004C704 /* iCarousel.m */,
+			);
+			path = iCarousel;
+			sourceTree = "<group>";
+		};
+		458E10AD1793AB300004C704 /* InfiniTabBar */ = {
+			isa = PBXGroup;
+			children = (
+				458E10AE1793AB300004C704 /* InfiniTabBar.h */,
+				458E10AF1793AB300004C704 /* InfiniTabBar.m */,
+			);
+			path = InfiniTabBar;
 			sourceTree = "<group>";
 		};
 		45CC680C17939C640008AD05 /* Handler */ = {
@@ -231,6 +262,8 @@
 				4506383F179329FC0054228A /* mainBackgound@2x.png in Resources */,
 				458E10A41793A4630004C704 /* tabbar.png in Resources */,
 				458E10A51793A4630004C704 /* tabbar@2x.png in Resources */,
+				458E10B81793B43F0004C704 /* background.png in Resources */,
+				458E10B91793B43F0004C704 /* page.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -243,8 +276,9 @@
 			files = (
 				453896D117931C2100B3087E /* main.m in Sources */,
 				453896D517931C2100B3087E /* BTAppDelegate.m in Sources */,
-				453896F217931F1B00B3087E /* InfiniTabBar.m in Sources */,
 				453896F517931F2B00B3087E /* BTViewController.m in Sources */,
+				458E10B01793AB300004C704 /* iCarousel.m in Sources */,
+				458E10B11793AB300004C704 /* InfiniTabBar.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -319,6 +353,10 @@
 		453896E517931C2100B3087E /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)\"",
+				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "GDBWTA/GDBWTA-Prefix.pch";
 				INFOPLIST_FILE = "GDBWTA/GDBWTA-Info.plist";
@@ -331,6 +369,10 @@
 		453896E617931C2100B3087E /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)\"",
+				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "GDBWTA/GDBWTA-Prefix.pch";
 				INFOPLIST_FILE = "GDBWTA/GDBWTA-Info.plist";

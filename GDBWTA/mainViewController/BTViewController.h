@@ -5,18 +5,22 @@
 
 #import <UIKit/UIKit.h>
 #import "InfiniTabBar.h"
+#import "iCarousel.h"
 
-@interface BTViewController : UIViewController <InfiniTabBarDelegate> {
+@interface BTViewController : UIViewController <InfiniTabBarDelegate,iCarouselDataSource, iCarouselDelegate> {
 	InfiniTabBar *tabBar;
 	
 	// UI
 	UILabel *dLabel;
 	UILabel *fLabel;
 }
-
-@property (nonatomic, retain) InfiniTabBar *tabBar;
+// DATA
+@property (nonatomic, retain) NSMutableArray *items;
+@property (nonatomic, assign) BOOL wrap;
 
 // UI
+@property (nonatomic, retain) InfiniTabBar *tabBar;
+@property (nonatomic, retain) iCarousel *carousel;
 @property (nonatomic, retain) UILabel *dLabel;
 @property (nonatomic, retain) UILabel *fLabel;
 
