@@ -33,7 +33,6 @@
 		450637FD1793215B0054228A /* icon@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icon@2x.png"; sourceTree = "<group>"; };
 		4506383C179329FC0054228A /* mainBackgound.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = mainBackgound.png; sourceTree = "<group>"; };
 		4506383D179329FC0054228A /* mainBackgound@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "mainBackgound@2x.png"; sourceTree = "<group>"; };
-		4506384117932F970054228A /* BTConstant.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = BTConstant.h; path = "../../PEIZHENG/新增项目/JASidePanels/Handler/BTConstant.h"; sourceTree = "<group>"; };
 		453896C117931C2100B3087E /* GDBWTA.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GDBWTA.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		453896C417931C2100B3087E /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		453896C617931C2100B3087E /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -51,6 +50,7 @@
 		453896F117931F1B00B3087E /* InfiniTabBar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = InfiniTabBar.m; path = utility/InfiniTabBar.m; sourceTree = "<group>"; };
 		453896F317931F2B00B3087E /* BTViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = BTViewController.h; path = mainViewController/BTViewController.h; sourceTree = "<group>"; };
 		453896F417931F2B00B3087E /* BTViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = BTViewController.m; path = mainViewController/BTViewController.m; sourceTree = "<group>"; };
+		45CC680D17939C640008AD05 /* BTConstant.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BTConstant.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -76,14 +76,6 @@
 				450637F81793213E0054228A /* icon@2x.png */,
 			);
 			path = image;
-			sourceTree = "<group>";
-		};
-		4506384017932F870054228A /* Handler */ = {
-			isa = PBXGroup;
-			children = (
-				4506384117932F970054228A /* BTConstant.h */,
-			);
-			name = Handler;
 			sourceTree = "<group>";
 		};
 		453896B817931C2100B3087E = {
@@ -118,7 +110,7 @@
 		453896CA17931C2100B3087E /* GDBWTA */ = {
 			isa = PBXGroup;
 			children = (
-				4506384017932F870054228A /* Handler */,
+				45CC680C17939C640008AD05 /* Handler */,
 				453896EB17931C7200B3087E /* Utility */,
 				453896E717931C4F00B3087E /* MainViewController */,
 				453896D317931C2100B3087E /* BTAppDelegate.h */,
@@ -159,6 +151,14 @@
 				453896F117931F1B00B3087E /* InfiniTabBar.m */,
 			);
 			name = Utility;
+			sourceTree = "<group>";
+		};
+		45CC680C17939C640008AD05 /* Handler */ = {
+			isa = PBXGroup;
+			children = (
+				45CC680D17939C640008AD05 /* BTConstant.h */,
+			);
+			path = Handler;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
