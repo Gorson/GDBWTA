@@ -4,16 +4,13 @@
 //
 
 #import "BTViewController.h"
-<<<<<<< HEAD
 #import "BTCocktailViewController.h"
-=======
 #define IS_IPAD (UI_USER_INTERFACE_IDIOM() == UIUserInterfaceIdiomPad)
 
 #define NUMBER_OF_ITEMS (IS_IPAD? 19: 12)
 #define NUMBER_OF_VISIBLE_ITEMS 25
 #define ITEM_SPACING 210.0f
 #define INCLUDE_PLACEHOLDERS YES
->>>>>>> 45fb2b166bfe42a5b0e409f7d8f3495d40f39c0e
 
 @implementation BTViewController
 
@@ -266,7 +263,7 @@
 	self.tabBar.infiniTabBarDelegate = self;
 	self.tabBar.bounces = NO;
 	
-	[self.view addSubview:self.tabBar];
+	[theApp.window addSubview:self.tabBar];
 }
 
 - (void)setOldItemsAnimated {
@@ -397,7 +394,7 @@
 	{
 		view = [[[UIImageView alloc] initWithImage:[UIImage imageNamed:@"page.png"]] autorelease];
 		label = [[[UILabel alloc] initWithFrame:view.bounds] autorelease];
-		label.backgroundColor = [UIColor clearColor];
+		label.backgroundColor = [UIColor redColor];
 		label.textAlignment = UITextAlignmentCenter;
 		label.font = [label.font fontWithSize:50];
 		[view addSubview:label];
