@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		18905D8E1793CCC60015AD50 /* BTCocktailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 18905D8D1793CCC60015AD50 /* BTCocktailViewController.m */; };
 		450637F91793213E0054228A /* icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 450637F71793213E0054228A /* icon.png */; };
 		450637FA1793213E0054228A /* icon@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 450637F81793213E0054228A /* icon@2x.png */; };
 		450637FC179321540054228A /* icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 450637FB179321540054228A /* icon.png */; };
@@ -23,7 +24,6 @@
 		453896D917931C2100B3087E /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 453896D817931C2100B3087E /* Default@2x.png */; };
 		453896DB17931C2100B3087E /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 453896DA17931C2100B3087E /* Default-568h@2x.png */; };
 		453896F517931F2B00B3087E /* BTViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 453896F417931F2B00B3087E /* BTViewController.m */; };
-		4566A7861793CB2300B0ED5A /* BTCocktailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4566A7851793CB2300B0ED5A /* BTCocktailViewController.m */; };
 		458E10A41793A4630004C704 /* tabbar.png in Resources */ = {isa = PBXBuildFile; fileRef = 458E10A21793A4630004C704 /* tabbar.png */; };
 		458E10A51793A4630004C704 /* tabbar@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 458E10A31793A4630004C704 /* tabbar@2x.png */; };
 		458E10B01793AB300004C704 /* iCarousel.m in Sources */ = {isa = PBXBuildFile; fileRef = 458E10AC1793AB300004C704 /* iCarousel.m */; settings = {COMPILER_FLAGS = "-fobjc-arc"; }; };
@@ -34,6 +34,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		18905D8C1793CCC60015AD50 /* BTCocktailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BTCocktailViewController.h; sourceTree = "<group>"; };
+		18905D8D1793CCC60015AD50 /* BTCocktailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BTCocktailViewController.m; sourceTree = "<group>"; };
 		450637F71793213E0054228A /* icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = icon.png; sourceTree = "<group>"; };
 		450637F81793213E0054228A /* icon@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icon@2x.png"; sourceTree = "<group>"; };
 		450637FB179321540054228A /* icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = icon.png; path = ../../icon.png; sourceTree = "<group>"; };
@@ -55,8 +57,6 @@
 		453896DA17931C2100B3087E /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
 		453896F317931F2B00B3087E /* BTViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = BTViewController.h; path = mainViewController/BTViewController.h; sourceTree = "<group>"; };
 		453896F417931F2B00B3087E /* BTViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = BTViewController.m; path = mainViewController/BTViewController.m; sourceTree = "<group>"; };
-		4566A7841793CB2300B0ED5A /* BTCocktailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = BTCocktailViewController.h; path = GDBWTA/BTCocktailViewController.h; sourceTree = SOURCE_ROOT; };
-		4566A7851793CB2300B0ED5A /* BTCocktailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = BTCocktailViewController.m; path = GDBWTA/BTCocktailViewController.m; sourceTree = SOURCE_ROOT; };
 		458E10A21793A4630004C704 /* tabbar.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = tabbar.png; sourceTree = "<group>"; };
 		458E10A31793A4630004C704 /* tabbar@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "tabbar@2x.png"; sourceTree = "<group>"; };
 		458E10AB1793AB300004C704 /* iCarousel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = iCarousel.h; sourceTree = "<group>"; };
@@ -84,6 +84,56 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		18905D8B1793CCC60015AD50 /* 调酒模块 */ = {
+			isa = PBXGroup;
+			children = (
+				18905D8C1793CCC60015AD50 /* BTCocktailViewController.h */,
+				18905D8D1793CCC60015AD50 /* BTCocktailViewController.m */,
+			);
+			name = "调酒模块";
+			path = "mainViewController/调酒模块";
+			sourceTree = "<group>";
+		};
+		18905D901793CD820015AD50 /*  咖啡模块 */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = " 咖啡模块";
+			path = "mainViewController/ 咖啡模块";
+			sourceTree = "<group>";
+		};
+		18905D911793CD820015AD50 /* 合作模块 */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = "合作模块";
+			path = "mainViewController/合作模块";
+			sourceTree = "<group>";
+		};
+		18905D921793CD820015AD50 /* 鉴赏模块 */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = "鉴赏模块";
+			path = "mainViewController/鉴赏模块";
+			sourceTree = "<group>";
+		};
+		18905D931793CD820015AD50 /* 品酒模块 */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = "品酒模块";
+			path = "mainViewController/品酒模块";
+			sourceTree = "<group>";
+		};
+		18905D941793CD820015AD50 /* 设置模块 */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = "设置模块";
+			path = "mainViewController/设置模块";
+			sourceTree = "<group>";
+		};
 		450637F61793213E0054228A /* image */ = {
 			isa = PBXGroup;
 			children = (
@@ -104,7 +154,6 @@
 		453896B817931C2100B3087E = {
 			isa = PBXGroup;
 			children = (
-				4566A7801793CAB600B0ED5A /* 调酒模块 */,
 				453896CA17931C2100B3087E /* GDBWTA */,
 				453896C317931C2100B3087E /* Frameworks */,
 				453896C217931C2100B3087E /* Products */,
@@ -161,19 +210,16 @@
 		453896E717931C4F00B3087E /* MainViewController */ = {
 			isa = PBXGroup;
 			children = (
+				18905D901793CD820015AD50 /*  咖啡模块 */,
+				18905D911793CD820015AD50 /* 合作模块 */,
+				18905D921793CD820015AD50 /* 鉴赏模块 */,
+				18905D931793CD820015AD50 /* 品酒模块 */,
+				18905D941793CD820015AD50 /* 设置模块 */,
+				18905D8B1793CCC60015AD50 /* 调酒模块 */,
 				453896F317931F2B00B3087E /* BTViewController.h */,
 				453896F417931F2B00B3087E /* BTViewController.m */,
 			);
 			name = MainViewController;
-			sourceTree = "<group>";
-		};
-		4566A7801793CAB600B0ED5A /* 调酒模块 */ = {
-			isa = PBXGroup;
-			children = (
-				4566A7841793CB2300B0ED5A /* BTCocktailViewController.h */,
-				4566A7851793CB2300B0ED5A /* BTCocktailViewController.m */,
-			);
-			path = "调酒模块";
 			sourceTree = "<group>";
 		};
 		458E10A61793AAFD0004C704 /* utility */ = {
@@ -292,7 +338,7 @@
 				453896F517931F2B00B3087E /* BTViewController.m in Sources */,
 				458E10B01793AB300004C704 /* iCarousel.m in Sources */,
 				458E10B11793AB300004C704 /* InfiniTabBar.m in Sources */,
-				4566A7861793CB2300B0ED5A /* BTCocktailViewController.m in Sources */,
+				18905D8E1793CCC60015AD50 /* BTCocktailViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
