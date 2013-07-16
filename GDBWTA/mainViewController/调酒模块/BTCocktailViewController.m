@@ -10,7 +10,9 @@
 #import "SlidingGridView.h"
 
 @interface BTCocktailViewController () <SlidingGridViewDelegate>
-
+{
+    UIButton *backButton;
+}
 @property (nonatomic, strong) NSArray *images;
 @property (nonatomic, strong) SlidingGridView *slideController;
 
@@ -40,6 +42,14 @@
     self.navigationItem.title = @"Sliding Grid View";
     
     [super viewDidLoad];
+    
+    backButton = [UIButton buttonWithType:UIButtonTypeCustom];
+    backButton.frame = CGRectMake(5, 425, 30, 30);
+    backButton.backgroundColor = [UIColor blueColor];
+    [backButton addTarget:self action:@selector(backView:) forControlEvents:UIControlEventTouchUpInside];
+    [self.view addSubview:backButton];
+
+    
 	// Do any additional setup after loading the view, typically from a nib
     
     //self.view.backgroundColor = [UIColor whiteColor];
@@ -75,5 +85,11 @@
 {
     NSLog (@"Selected image idx: %d", viewIndex);
 }
+
+- (void)backView:(UIButton *)sender
+{
+    [self.navigationController popViewControllerAnimated:YES];
+}
+
 
 @end

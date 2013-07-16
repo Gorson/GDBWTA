@@ -97,7 +97,6 @@
 		4566A7F317956D7100B0ED5A /* BTCocktailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4566A7F217956D7100B0ED5A /* BTCocktailViewController.m */; };
 		4566A7FB17956E0A00B0ED5A /* SlidingGridSpinner.m in Sources */ = {isa = PBXBuildFile; fileRef = 4566A7F617956E0A00B0ED5A /* SlidingGridSpinner.m */; };
 		4566A7FC17956E0A00B0ED5A /* SlidingGridView.m in Sources */ = {isa = PBXBuildFile; fileRef = 4566A7F817956E0A00B0ED5A /* SlidingGridView.m */; };
-		4566A7FD17956E0A00B0ED5A /* SlidingListView.m in Sources */ = {isa = PBXBuildFile; fileRef = 4566A7FA17956E0A00B0ED5A /* SlidingListView.m */; };
 		458E10A41793A4630004C704 /* tabbar.png in Resources */ = {isa = PBXBuildFile; fileRef = 458E10A21793A4630004C704 /* tabbar.png */; };
 		458E10A51793A4630004C704 /* tabbar@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 458E10A31793A4630004C704 /* tabbar@2x.png */; };
 		458E10B01793AB300004C704 /* iCarousel.m in Sources */ = {isa = PBXBuildFile; fileRef = 458E10AC1793AB300004C704 /* iCarousel.m */; settings = {COMPILER_FLAGS = "-fobjc-arc"; }; };
@@ -212,8 +211,6 @@
 		4566A7F617956E0A00B0ED5A /* SlidingGridSpinner.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SlidingGridSpinner.m; sourceTree = "<group>"; };
 		4566A7F717956E0A00B0ED5A /* SlidingGridView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SlidingGridView.h; sourceTree = "<group>"; };
 		4566A7F817956E0A00B0ED5A /* SlidingGridView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SlidingGridView.m; sourceTree = "<group>"; };
-		4566A7F917956E0A00B0ED5A /* SlidingListView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SlidingListView.h; sourceTree = "<group>"; };
-		4566A7FA17956E0A00B0ED5A /* SlidingListView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SlidingListView.m; sourceTree = "<group>"; };
 		458E10A21793A4630004C704 /* tabbar.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = tabbar.png; sourceTree = "<group>"; };
 		458E10A31793A4630004C704 /* tabbar@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "tabbar@2x.png"; sourceTree = "<group>"; };
 		458E10AB1793AB300004C704 /* iCarousel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = iCarousel.h; sourceTree = "<group>"; };
@@ -513,8 +510,6 @@
 				4566A7F617956E0A00B0ED5A /* SlidingGridSpinner.m */,
 				4566A7F717956E0A00B0ED5A /* SlidingGridView.h */,
 				4566A7F817956E0A00B0ED5A /* SlidingGridView.m */,
-				4566A7F917956E0A00B0ED5A /* SlidingListView.h */,
-				4566A7FA17956E0A00B0ED5A /* SlidingListView.m */,
 			);
 			path = Animations;
 			sourceTree = "<group>";
@@ -708,7 +703,6 @@
 				4566A7F317956D7100B0ED5A /* BTCocktailViewController.m in Sources */,
 				4566A7FB17956E0A00B0ED5A /* SlidingGridSpinner.m in Sources */,
 				4566A7FC17956E0A00B0ED5A /* SlidingGridView.m in Sources */,
-				4566A7FD17956E0A00B0ED5A /* SlidingListView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
