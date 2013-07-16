@@ -1,9 +1,9 @@
 //
 //  BTCocktailViewController.h
-//  GDBWTA
+//  Animations
 //
-//  Created by Air on 13-7-15.
-//  Copyright (c) 2013年 Air. All rights reserved.
+//  Created by Dmitry Klimkin on 20/11/12.
+//  Copyright (c) 2012 Dmitry Klimkin. All rights reserved.
 //
 
 #import <UIKit/UIKit.h>

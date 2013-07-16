@@ -1,38 +1,79 @@
 //
-//  BTCocktailViewController.m
-//  GDBWTA
+//  ViewController1.m
+//  Animations
 //
-//  Created by Air on 13-7-15.
-//  Copyright (c) 2013年 Air. All rights reserved.
+//  Created by Dmitry Klimkin on 20/11/12.
+//  Copyright (c) 2012 Dmitry Klimkin. All rights reserved.
 //
 
 #import "BTCocktailViewController.h"
+#import "SlidingGridView.h"
 
-@interface BTCocktailViewController ()
+@interface BTCocktailViewController () <SlidingGridViewDelegate>
+
+@property (nonatomic, strong) NSArray *images;
+@property (nonatomic, strong) SlidingGridView *slideController;
 
 @end
 
 @implementation BTCocktailViewController
 
-- (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
+@synthesize images = _images;
+@synthesize slideController = _slideController;
+
+- (SlidingGridView*)slideController
 {
-    self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
-    if (self) {
-        // Custom initialization
+    if (_slideController == nil)
+    {
+        _slideController = [[SlidingGridView alloc] initWithFrame:CGRectMake(10, 0, 300, 430)];
+        _slideController.backgroundColor = [UIColor clearColor];
+        _slideController.delegate = self;
+        _slideController.cellBackgroundColor = [UIColor darkGrayColor];
+
+        [self.view addSubview: _slideController];
     }
-    return self;
+    return _slideController;
 }
 
 - (void)viewDidLoad
 {
+    self.navigationItem.title = @"Sliding Grid View";
+    
     [super viewDidLoad];
-	// Do any additional setup after loading the view.
+	// Do any additional setup after loading the view, typically from a nib
+    
+    //self.view.backgroundColor = [UIColor whiteColor];
+    self.view.backgroundColor = [UIColor colorWithPatternImage:[UIImage imageNamed:@"bg.jpg"]];
+   
+    NSMutableArray *imgs = [[NSMutableArray alloc] init];
+    
+    for (int i=1; i<41; i++)
+    {
+        NSString *imageName = [NSString stringWithFormat:@"%d", i];
+        UIImage *img = [UIImage imageNamed:imageName];
+        UIImageView *imgView = [[UIImageView alloc] initWithImage: img];
+        [imgs addObject: imgView];
+    }
+    
+    self.images = imgs;
+    
+    self.slideController.allowRefreshWithShake = YES;
 }
 
-- (void)didReceiveMemoryWarning
+- (void)viewDidAppear:(BOOL)animated
 {
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
+    [super viewDidAppear:animated];
+    [self performSelector:@selector(setLoadedImages) withObject:nil afterDelay:2.0f];
+}
+
+- (void) setLoadedImages
+{
+    self.slideController.cellSubViews = self.images;
+}
+
+- (void)didSelectViewIn:(SlidingGridView *)controller selectedViewIndex:(int)viewIndex
+{
+    NSLog (@"Selected image idx: %d", viewIndex);
 }
 
 @end
