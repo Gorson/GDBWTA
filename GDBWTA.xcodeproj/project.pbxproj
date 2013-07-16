@@ -104,6 +104,10 @@
 		458E10B51793AB7E0004C704 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 458E10B41793AB7E0004C704 /* QuartzCore.framework */; };
 		458E10B81793B43F0004C704 /* background.png in Resources */ = {isa = PBXBuildFile; fileRef = 458E10B61793B43F0004C704 /* background.png */; };
 		458E10B91793B43F0004C704 /* page.png in Resources */ = {isa = PBXBuildFile; fileRef = 458E10B71793B43F0004C704 /* page.png */; };
+		459908E81795BC4C005B0357 /* RadioButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 459908E51795BC4C005B0357 /* RadioButton.m */; };
+		459908E91795BC4C005B0357 /* RadioButtonViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 459908E71795BC4C005B0357 /* RadioButtonViewController.m */; };
+		459908EC1795BD03005B0357 /* mainView@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 459908EA1795BD03005B0357 /* mainView@2x.png */; };
+		459908ED1795BD03005B0357 /* mainView.png in Resources */ = {isa = PBXBuildFile; fileRef = 459908EB1795BD03005B0357 /* mainView.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -220,6 +224,12 @@
 		458E10B41793AB7E0004C704 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
 		458E10B61793B43F0004C704 /* background.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = background.png; sourceTree = "<group>"; };
 		458E10B71793B43F0004C704 /* page.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = page.png; sourceTree = "<group>"; };
+		459908E41795BC4C005B0357 /* RadioButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RadioButton.h; sourceTree = "<group>"; };
+		459908E51795BC4C005B0357 /* RadioButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RadioButton.m; sourceTree = "<group>"; };
+		459908E61795BC4C005B0357 /* RadioButtonViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RadioButtonViewController.h; sourceTree = "<group>"; };
+		459908E71795BC4C005B0357 /* RadioButtonViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RadioButtonViewController.m; sourceTree = "<group>"; };
+		459908EA1795BD03005B0357 /* mainView@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "mainView@2x.png"; sourceTree = "<group>"; };
+		459908EB1795BD03005B0357 /* mainView.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = mainView.png; sourceTree = "<group>"; };
 		45CC680D17939C640008AD05 /* BTConstant.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BTConstant.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -354,6 +364,8 @@
 			isa = PBXGroup;
 			children = (
 				4566A78817956CD400B0ED5A /* Imgs */,
+				459908EA1795BD03005B0357 /* mainView@2x.png */,
+				459908EB1795BD03005B0357 /* mainView.png */,
 				18905DC41793FEFD0015AD50 /* 爱很简单.mp3 */,
 				450637FD1793215B0054228A /* icon@2x.png */,
 				450637FB179321540054228A /* icon.png */,
@@ -517,6 +529,7 @@
 		458E10A61793AAFD0004C704 /* utility */ = {
 			isa = PBXGroup;
 			children = (
+				459908E31795BC4C005B0357 /* Radio */,
 				4566A7F417956E0A00B0ED5A /* Animations */,
 				18905DAB1793E31E0015AD50 /* CustomAlertView */,
 				18905D9C1793D4B50015AD50 /* Reachability */,
@@ -542,6 +555,17 @@
 				458E10AF1793AB300004C704 /* InfiniTabBar.m */,
 			);
 			path = InfiniTabBar;
+			sourceTree = "<group>";
+		};
+		459908E31795BC4C005B0357 /* Radio */ = {
+			isa = PBXGroup;
+			children = (
+				459908E41795BC4C005B0357 /* RadioButton.h */,
+				459908E51795BC4C005B0357 /* RadioButton.m */,
+				459908E61795BC4C005B0357 /* RadioButtonViewController.h */,
+				459908E71795BC4C005B0357 /* RadioButtonViewController.m */,
+			);
+			path = Radio;
 			sourceTree = "<group>";
 		};
 		45CC680C17939C640008AD05 /* Handler */ = {
@@ -679,6 +703,8 @@
 				4566A7EE17956CD400B0ED5A /* refresh_h.png in Resources */,
 				4566A7EF17956CD400B0ED5A /* tabbar.png in Resources */,
 				4566A7F017956CD400B0ED5A /* tabbar@2x.png in Resources */,
+				459908EC1795BD03005B0357 /* mainView@2x.png in Resources */,
+				459908ED1795BD03005B0357 /* mainView.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -703,6 +729,8 @@
 				4566A7F317956D7100B0ED5A /* BTCocktailViewController.m in Sources */,
 				4566A7FB17956E0A00B0ED5A /* SlidingGridSpinner.m in Sources */,
 				4566A7FC17956E0A00B0ED5A /* SlidingGridView.m in Sources */,
+				459908E81795BC4C005B0357 /* RadioButton.m in Sources */,
+				459908E91795BC4C005B0357 /* RadioButtonViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

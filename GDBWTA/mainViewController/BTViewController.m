@@ -6,11 +6,13 @@
 #import "BTViewController.h"
 #import "BTCocktailViewController.h"
 #import "BTSettingViewController.h"
+#import "RadioButtonViewController.h"
+
 #define IS_IPAD (UI_USER_INTERFACE_IDIOM() == UIUserInterfaceIdiomPad)
 
 #define NUMBER_OF_ITEMS (IS_IPAD? 19: 12)
 #define NUMBER_OF_VISIBLE_ITEMS 25
-#define ITEM_SPACING 210.0f
+#define ITEM_SPACING 170.0f
 #define INCLUDE_PLACEHOLDERS YES
 
 @interface BTViewController()
@@ -66,6 +68,10 @@
     carousel.type = iCarouselTypeRotary;
     [self.view addSubview:carousel];
     
+    UIButton *questionBtn = [[UIButton alloc]initWithFrame:CGRectMake(262.0f, 13.0f, 44.0f, 44.0f)];
+    //    [questionBtn setBackgroundColor:REDColor];
+    [questionBtn addTarget:self action:@selector(question:) forControlEvents:UIControlEventTouchUpInside];
+    [self.view addSubview:questionBtn];
 //    // Items
 //	UITabBarItem *favorites = [[UITabBarItem alloc] initWithTitle:nil image:[UIImage imageNamed:@""] tag:1];
 //	UITabBarItem *topRated = [[UITabBarItem alloc] initWithTitle:nil image:[UIImage imageNamed:@""] tag:2];	UITabBarItem *featured = [[UITabBarItem alloc] initWithTitle:nil image:[UIImage imageNamed:@""] tag:0];
@@ -227,6 +233,15 @@
 {
     [super viewDidUnload];
     self.carousel = nil;
+}
+
+#pragma mark -
+#pragma mark - operation
+
+- (void)question:(UIButton *)sender
+{
+    RadioButtonViewController * radioButtonViewController = [[RadioButtonViewController alloc]init];
+    [self presentModalViewController:radioButtonViewController animated:YES];
 }
 
 - (void)bounces:(UISwitch *)sender {
@@ -402,12 +417,12 @@
 	//create new view if no view is available for recycling
 	if (view == nil)
 	{
-		view = [[[UIImageView alloc] initWithImage:[UIImage imageNamed:@"page.png"]] autorelease];
-		label = [[[UILabel alloc] initWithFrame:view.bounds] autorelease];
-		label.backgroundColor = [UIColor redColor];
-		label.textAlignment = UITextAlignmentCenter;
-		label.font = [label.font fontWithSize:50];
-		[view addSubview:label];
+		view = [[[UIImageView alloc] initWithImage:[UIImage imageNamed:@"mainView.png"]] autorelease];
+//		label = [[[UILabel alloc] initWithFrame:view.bounds] autorelease];
+//		label.backgroundColor = [UIColor clearColor];
+//		label.textAlignment = UITextAlignmentCenter;
+//		label.font = [label.font fontWithSize:50];
+//		[view addSubview:label];
 	}
 	else
 	{
