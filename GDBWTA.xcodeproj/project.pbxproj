@@ -30,8 +30,6 @@
 		450637FA1793213E0054228A /* icon@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 450637F81793213E0054228A /* icon@2x.png */; };
 		450637FC179321540054228A /* icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 450637FB179321540054228A /* icon.png */; };
 		450637FE1793215B0054228A /* icon@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 450637FD1793215B0054228A /* icon@2x.png */; };
-		4506383E179329FC0054228A /* mainBackgound.png in Resources */ = {isa = PBXBuildFile; fileRef = 4506383C179329FC0054228A /* mainBackgound.png */; };
-		4506383F179329FC0054228A /* mainBackgound@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 4506383D179329FC0054228A /* mainBackgound@2x.png */; };
 		453896C517931C2100B3087E /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 453896C417931C2100B3087E /* UIKit.framework */; };
 		453896C717931C2100B3087E /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 453896C617931C2100B3087E /* Foundation.framework */; };
 		453896C917931C2100B3087E /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 453896C817931C2100B3087E /* CoreGraphics.framework */; };
@@ -111,6 +109,12 @@
 		CE8C85001798ECEB00F871DE /* SegmentedButton.m in Sources */ = {isa = PBXBuildFile; fileRef = CE8C84FF1798ECEB00F871DE /* SegmentedButton.m */; };
 		CE8C85031798EEE300F871DE /* settings.png in Resources */ = {isa = PBXBuildFile; fileRef = CE8C85011798EEE300F871DE /* settings.png */; };
 		CE8C85041798EEE300F871DE /* settings@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = CE8C85021798EEE300F871DE /* settings@2x.png */; };
+		CEFBE0951799594300879FCD /* secondViewController.png in Resources */ = {isa = PBXBuildFile; fileRef = CEFBE0931799594300879FCD /* secondViewController.png */; };
+		CEFBE0961799594300879FCD /* secondViewController@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = CEFBE0941799594300879FCD /* secondViewController@2x.png */; };
+		CEFBE09917995B0800879FCD /* secondViewControllerDetail.png in Resources */ = {isa = PBXBuildFile; fileRef = CEFBE09717995B0800879FCD /* secondViewControllerDetail.png */; };
+		CEFBE09A17995B0800879FCD /* secondViewControllerDetail@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = CEFBE09817995B0800879FCD /* secondViewControllerDetail@2x.png */; };
+		CEFBE09D17995CFA00879FCD /* thirdViewController.png in Resources */ = {isa = PBXBuildFile; fileRef = CEFBE09B17995CFA00879FCD /* thirdViewController.png */; };
+		CEFBE09E17995CFA00879FCD /* thirdViewController@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = CEFBE09C17995CFA00879FCD /* thirdViewController@2x.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -143,8 +147,6 @@
 		450637F81793213E0054228A /* icon@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icon@2x.png"; sourceTree = "<group>"; };
 		450637FB179321540054228A /* icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = icon.png; path = ../../icon.png; sourceTree = "<group>"; };
 		450637FD1793215B0054228A /* icon@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "icon@2x.png"; path = "../../icon@2x.png"; sourceTree = "<group>"; };
-		4506383C179329FC0054228A /* mainBackgound.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = mainBackgound.png; sourceTree = "<group>"; };
-		4506383D179329FC0054228A /* mainBackgound@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "mainBackgound@2x.png"; sourceTree = "<group>"; };
 		453896C117931C2100B3087E /* GDBWTA.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GDBWTA.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		453896C417931C2100B3087E /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		453896C617931C2100B3087E /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -238,6 +240,12 @@
 		CE8C84FF1798ECEB00F871DE /* SegmentedButton.m */ = {isa = PBXFileReference; fileEncoding = 4; indentWidth = 5; lastKnownFileType = sourcecode.c.objc; path = SegmentedButton.m; sourceTree = "<group>"; };
 		CE8C85011798EEE300F871DE /* settings.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = settings.png; sourceTree = "<group>"; };
 		CE8C85021798EEE300F871DE /* settings@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "settings@2x.png"; sourceTree = "<group>"; };
+		CEFBE0931799594300879FCD /* secondViewController.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = secondViewController.png; sourceTree = "<group>"; };
+		CEFBE0941799594300879FCD /* secondViewController@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "secondViewController@2x.png"; sourceTree = "<group>"; };
+		CEFBE09717995B0800879FCD /* secondViewControllerDetail.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = secondViewControllerDetail.png; sourceTree = "<group>"; };
+		CEFBE09817995B0800879FCD /* secondViewControllerDetail@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "secondViewControllerDetail@2x.png"; sourceTree = "<group>"; };
+		CEFBE09B17995CFA00879FCD /* thirdViewController.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = thirdViewController.png; sourceTree = "<group>"; };
+		CEFBE09C17995CFA00879FCD /* thirdViewController@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "thirdViewController@2x.png"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -370,6 +378,12 @@
 		450637F61793213E0054228A /* image */ = {
 			isa = PBXGroup;
 			children = (
+				CEFBE09B17995CFA00879FCD /* thirdViewController.png */,
+				CEFBE09C17995CFA00879FCD /* thirdViewController@2x.png */,
+				CEFBE09717995B0800879FCD /* secondViewControllerDetail.png */,
+				CEFBE09817995B0800879FCD /* secondViewControllerDetail@2x.png */,
+				CEFBE0931799594300879FCD /* secondViewController.png */,
+				CEFBE0941799594300879FCD /* secondViewController@2x.png */,
 				4566A78817956CD400B0ED5A /* Imgs */,
 				459908EA1795BD03005B0357 /* mainView@2x.png */,
 				459908EB1795BD03005B0357 /* mainView.png */,
@@ -380,8 +394,6 @@
 				458E10B71793B43F0004C704 /* page.png */,
 				458E10A21793A4630004C704 /* tabbar1.png */,
 				458E10A31793A4630004C704 /* tabbar1@2x.png */,
-				4506383C179329FC0054228A /* mainBackgound.png */,
-				4506383D179329FC0054228A /* mainBackgound@2x.png */,
 				450637F71793213E0054228A /* icon.png */,
 				450637F81793213E0054228A /* icon@2x.png */,
 			);
@@ -655,8 +667,6 @@
 				450637FA1793213E0054228A /* icon@2x.png in Resources */,
 				450637FC179321540054228A /* icon.png in Resources */,
 				450637FE1793215B0054228A /* icon@2x.png in Resources */,
-				4506383E179329FC0054228A /* mainBackgound.png in Resources */,
-				4506383F179329FC0054228A /* mainBackgound@2x.png in Resources */,
 				458E10A41793A4630004C704 /* tabbar1.png in Resources */,
 				458E10A51793A4630004C704 /* tabbar1@2x.png in Resources */,
 				458E10B81793B43F0004C704 /* background.png in Resources */,
@@ -726,6 +736,12 @@
 				459908ED1795BD03005B0357 /* mainView.png in Resources */,
 				CE8C85031798EEE300F871DE /* settings.png in Resources */,
 				CE8C85041798EEE300F871DE /* settings@2x.png in Resources */,
+				CEFBE0951799594300879FCD /* secondViewController.png in Resources */,
+				CEFBE0961799594300879FCD /* secondViewController@2x.png in Resources */,
+				CEFBE09917995B0800879FCD /* secondViewControllerDetail.png in Resources */,
+				CEFBE09A17995B0800879FCD /* secondViewControllerDetail@2x.png in Resources */,
+				CEFBE09D17995CFA00879FCD /* thirdViewController.png in Resources */,
+				CEFBE09E17995CFA00879FCD /* thirdViewController@2x.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

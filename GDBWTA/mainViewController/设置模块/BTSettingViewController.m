@@ -52,13 +52,13 @@ static BTSettingViewController *_sharedSettingViewController = nil;
 
 - (void)initWithControl
 {
-    settingtableView = [[UITableView alloc]initWithFrame:CGRectMake(0, 0, IPHONE_WIDTH, IPHONE_HEIGHT - 180) style:UITableViewStyleGrouped];
+    settingtableView = [[UITableView alloc]initWithFrame:CGRectMake(0, 30.0f, IPHONE_WIDTH, IPHONE_HEIGHT - 180) style:UITableViewStyleGrouped];
     settingtableView.dataSource = self;
     settingtableView.delegate = self;
     settingtableView.backgroundView = nil;
-    UIImageView *backgroundView = [[UIImageView alloc]initWithImage:[UIImage imageNamed:@"mainBackgound"]];
+    UIImageView *backgroundView = [[UIImageView alloc]initWithImage:[UIImage imageNamed:@"background.png"]];
     settingtableView.scrollEnabled = NO;
-    settingtableView.backgroundView = backgroundView;
+    [self.view addSubview:backgroundView];
     [self.view addSubview:settingtableView];
     [settingtableView release];
     
@@ -69,7 +69,7 @@ static BTSettingViewController *_sharedSettingViewController = nil;
     [switchControl release];
     
     UIButton *backButton = [UIButton buttonWithType:UIButtonTypeCustom];
-    backButton.frame = CGRectMake(5, 425, 30, 30);
+    backButton.frame = CGRectMake(15, 10, 40, 20);
     backButton.backgroundColor = REDColor;
     [backButton addTarget:self action:@selector(backView:) forControlEvents:UIControlEventTouchUpInside];
     [self.view addSubview:backButton];
