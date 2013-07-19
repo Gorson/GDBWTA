@@ -6,6 +6,7 @@
 #import <UIKit/UIKit.h>
 #import "InfiniTabBar.h"
 #import "iCarousel.h"
+@class SegmentedButton;
 
 @interface BTViewController : UIViewController <InfiniTabBarDelegate,iCarouselDataSource, iCarouselDelegate> {
 	InfiniTabBar *tabBar;
@@ -23,5 +24,7 @@
 @property (nonatomic, retain) iCarousel *carousel;
 @property (nonatomic, retain) UILabel *dLabel;
 @property (nonatomic, retain) UILabel *fLabel;
+@property (strong, nonatomic)SegmentedButton *segmentedButtonView;
+@property (strong, nonatomic)SegmentedButton *imageSegmentedButton;
 
 @end

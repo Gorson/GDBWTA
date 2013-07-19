@@ -97,8 +97,8 @@
 		4566A7F317956D7100B0ED5A /* BTCocktailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4566A7F217956D7100B0ED5A /* BTCocktailViewController.m */; };
 		4566A7FB17956E0A00B0ED5A /* SlidingGridSpinner.m in Sources */ = {isa = PBXBuildFile; fileRef = 4566A7F617956E0A00B0ED5A /* SlidingGridSpinner.m */; };
 		4566A7FC17956E0A00B0ED5A /* SlidingGridView.m in Sources */ = {isa = PBXBuildFile; fileRef = 4566A7F817956E0A00B0ED5A /* SlidingGridView.m */; };
-		458E10A41793A4630004C704 /* tabbar.png in Resources */ = {isa = PBXBuildFile; fileRef = 458E10A21793A4630004C704 /* tabbar.png */; };
-		458E10A51793A4630004C704 /* tabbar@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 458E10A31793A4630004C704 /* tabbar@2x.png */; };
+		458E10A41793A4630004C704 /* tabbar1.png in Resources */ = {isa = PBXBuildFile; fileRef = 458E10A21793A4630004C704 /* tabbar1.png */; };
+		458E10A51793A4630004C704 /* tabbar1@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 458E10A31793A4630004C704 /* tabbar1@2x.png */; };
 		458E10B01793AB300004C704 /* iCarousel.m in Sources */ = {isa = PBXBuildFile; fileRef = 458E10AC1793AB300004C704 /* iCarousel.m */; settings = {COMPILER_FLAGS = "-fobjc-arc"; }; };
 		458E10B11793AB300004C704 /* InfiniTabBar.m in Sources */ = {isa = PBXBuildFile; fileRef = 458E10AF1793AB300004C704 /* InfiniTabBar.m */; };
 		458E10B51793AB7E0004C704 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 458E10B41793AB7E0004C704 /* QuartzCore.framework */; };
@@ -108,6 +108,9 @@
 		459908E91795BC4C005B0357 /* RadioButtonViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 459908E71795BC4C005B0357 /* RadioButtonViewController.m */; };
 		459908EC1795BD03005B0357 /* mainView@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 459908EA1795BD03005B0357 /* mainView@2x.png */; };
 		459908ED1795BD03005B0357 /* mainView.png in Resources */ = {isa = PBXBuildFile; fileRef = 459908EB1795BD03005B0357 /* mainView.png */; };
+		CE8C85001798ECEB00F871DE /* SegmentedButton.m in Sources */ = {isa = PBXBuildFile; fileRef = CE8C84FF1798ECEB00F871DE /* SegmentedButton.m */; };
+		CE8C85031798EEE300F871DE /* settings.png in Resources */ = {isa = PBXBuildFile; fileRef = CE8C85011798EEE300F871DE /* settings.png */; };
+		CE8C85041798EEE300F871DE /* settings@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = CE8C85021798EEE300F871DE /* settings@2x.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -215,8 +218,8 @@
 		4566A7F617956E0A00B0ED5A /* SlidingGridSpinner.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SlidingGridSpinner.m; sourceTree = "<group>"; };
 		4566A7F717956E0A00B0ED5A /* SlidingGridView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SlidingGridView.h; sourceTree = "<group>"; };
 		4566A7F817956E0A00B0ED5A /* SlidingGridView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SlidingGridView.m; sourceTree = "<group>"; };
-		458E10A21793A4630004C704 /* tabbar.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = tabbar.png; sourceTree = "<group>"; };
-		458E10A31793A4630004C704 /* tabbar@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "tabbar@2x.png"; sourceTree = "<group>"; };
+		458E10A21793A4630004C704 /* tabbar1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = tabbar1.png; sourceTree = "<group>"; };
+		458E10A31793A4630004C704 /* tabbar1@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "tabbar1@2x.png"; sourceTree = "<group>"; };
 		458E10AB1793AB300004C704 /* iCarousel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = iCarousel.h; sourceTree = "<group>"; };
 		458E10AC1793AB300004C704 /* iCarousel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = iCarousel.m; sourceTree = "<group>"; };
 		458E10AE1793AB300004C704 /* InfiniTabBar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = InfiniTabBar.h; sourceTree = "<group>"; };
@@ -231,6 +234,10 @@
 		459908EA1795BD03005B0357 /* mainView@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "mainView@2x.png"; sourceTree = "<group>"; };
 		459908EB1795BD03005B0357 /* mainView.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = mainView.png; sourceTree = "<group>"; };
 		45CC680D17939C640008AD05 /* BTConstant.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BTConstant.h; sourceTree = "<group>"; };
+		CE8C84FE1798ECEB00F871DE /* SegmentedButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SegmentedButton.h; sourceTree = "<group>"; };
+		CE8C84FF1798ECEB00F871DE /* SegmentedButton.m */ = {isa = PBXFileReference; fileEncoding = 4; indentWidth = 5; lastKnownFileType = sourcecode.c.objc; path = SegmentedButton.m; sourceTree = "<group>"; };
+		CE8C85011798EEE300F871DE /* settings.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = settings.png; sourceTree = "<group>"; };
+		CE8C85021798EEE300F871DE /* settings@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "settings@2x.png"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -371,8 +378,8 @@
 				450637FB179321540054228A /* icon.png */,
 				458E10B61793B43F0004C704 /* background.png */,
 				458E10B71793B43F0004C704 /* page.png */,
-				458E10A21793A4630004C704 /* tabbar.png */,
-				458E10A31793A4630004C704 /* tabbar@2x.png */,
+				458E10A21793A4630004C704 /* tabbar1.png */,
+				458E10A31793A4630004C704 /* tabbar1@2x.png */,
 				4506383C179329FC0054228A /* mainBackgound.png */,
 				4506383D179329FC0054228A /* mainBackgound@2x.png */,
 				450637F71793213E0054228A /* icon.png */,
@@ -429,6 +436,8 @@
 		453896CB17931C2100B3087E /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				CE8C85011798EEE300F871DE /* settings.png */,
+				CE8C85021798EEE300F871DE /* settings@2x.png */,
 				450637F61793213E0054228A /* image */,
 				453896CC17931C2100B3087E /* GDBWTA-Info.plist */,
 				453896CD17931C2100B3087E /* InfoPlist.strings */,
@@ -529,6 +538,7 @@
 		458E10A61793AAFD0004C704 /* utility */ = {
 			isa = PBXGroup;
 			children = (
+				CE8C84FD1798ECEB00F871DE /* glassSegmentedButtons */,
 				459908E31795BC4C005B0357 /* Radio */,
 				4566A7F417956E0A00B0ED5A /* Animations */,
 				18905DAB1793E31E0015AD50 /* CustomAlertView */,
@@ -574,6 +584,15 @@
 				45CC680D17939C640008AD05 /* BTConstant.h */,
 			);
 			path = Handler;
+			sourceTree = "<group>";
+		};
+		CE8C84FD1798ECEB00F871DE /* glassSegmentedButtons */ = {
+			isa = PBXGroup;
+			children = (
+				CE8C84FE1798ECEB00F871DE /* SegmentedButton.h */,
+				CE8C84FF1798ECEB00F871DE /* SegmentedButton.m */,
+			);
+			path = glassSegmentedButtons;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -638,8 +657,8 @@
 				450637FE1793215B0054228A /* icon@2x.png in Resources */,
 				4506383E179329FC0054228A /* mainBackgound.png in Resources */,
 				4506383F179329FC0054228A /* mainBackgound@2x.png in Resources */,
-				458E10A41793A4630004C704 /* tabbar.png in Resources */,
-				458E10A51793A4630004C704 /* tabbar@2x.png in Resources */,
+				458E10A41793A4630004C704 /* tabbar1.png in Resources */,
+				458E10A51793A4630004C704 /* tabbar1@2x.png in Resources */,
 				458E10B81793B43F0004C704 /* background.png in Resources */,
 				458E10B91793B43F0004C704 /* page.png in Resources */,
 				18905DB81793E3E00015AD50 /* alert-black-button.png in Resources */,
@@ -705,6 +724,8 @@
 				4566A7F017956CD400B0ED5A /* tabbar@2x.png in Resources */,
 				459908EC1795BD03005B0357 /* mainView@2x.png in Resources */,
 				459908ED1795BD03005B0357 /* mainView.png in Resources */,
+				CE8C85031798EEE300F871DE /* settings.png in Resources */,
+				CE8C85041798EEE300F871DE /* settings@2x.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -731,6 +752,7 @@
 				4566A7FC17956E0A00B0ED5A /* SlidingGridView.m in Sources */,
 				459908E81795BC4C005B0357 /* RadioButton.m in Sources */,
 				459908E91795BC4C005B0357 /* RadioButtonViewController.m in Sources */,
+				CE8C85001798ECEB00F871DE /* SegmentedButton.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -34,6 +34,7 @@
             
 			UITabBar *tabBar = [[UITabBar alloc] initWithFrame:CGRectMake(x, 0.0, 320.0, 49.0)];
 			tabBar.delegate = self;
+            tabBar.backgroundColor = [UIColor clearColor];
             [tabBar setBackgroundImage:[UIImage imageNamed:@"tabbar.png"]];
             
 			int len = 0;
