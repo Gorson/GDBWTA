@@ -31,10 +31,17 @@
 {
     self.window = [[[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]] autorelease];
     // Override point for customization after application launch.
-    
     BTSettingViewController *settingViewController = [BTSettingViewController sharedInstance];
-    [settingViewController playmusic];
     self.viewController = [[[BTViewController alloc] init]autorelease];
+    
+    NSUserDefaults *userdefaults = userdefault;
+    if ([userdefaults boolForKey:@"playmusic"]) {
+        [settingViewController playmusic];
+    }
+    else
+    {
+        DLog(@"因为用户上次设置了不启动音乐..");
+    }
     UINavigationController *nav =[[UINavigationController alloc]initWithRootViewController:self.viewController];
     self.window.rootViewController = nav;
     [nav.navigationBar setHidden:YES];

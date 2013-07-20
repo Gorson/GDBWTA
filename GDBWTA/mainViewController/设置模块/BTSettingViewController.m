@@ -14,7 +14,9 @@
 #import <AVFoundation/AVFoundation.h>
 
 @interface BTSettingViewController ()
-
+{
+    NSUserDefaults *userdefaults;
+}
 @end
 
 @implementation BTSettingViewController
@@ -38,7 +40,6 @@ static BTSettingViewController *_sharedSettingViewController = nil;
         player = [[AVAudioPlayer alloc]initWithContentsOfURL:url error:nil];
         
         userdefaults = userdefault;
-        [userdefaults setBool:YES forKey:@"playmusic"];
         // Custom initialization
     }
     return self;
@@ -52,7 +53,7 @@ static BTSettingViewController *_sharedSettingViewController = nil;
 
 - (void)initWithControl
 {
-    settingtableView = [[UITableView alloc]initWithFrame:CGRectMake(0, 30.0f, IPHONE_WIDTH, IPHONE_HEIGHT - 180) style:UITableViewStyleGrouped];
+    settingtableView = [[UITableView alloc]initWithFrame:CGRectMake(0, 30.0f, IPHONE_WIDTH, IPHONE_HEIGHT - 180.0f) style:UITableViewStyleGrouped];
     settingtableView.dataSource = self;
     settingtableView.delegate = self;
     settingtableView.backgroundView = nil;
@@ -63,7 +64,14 @@ static BTSettingViewController *_sharedSettingViewController = nil;
     [settingtableView release];
     
     UISwitch *switchControl = [[UISwitch alloc]initWithFrame:CGRectMake(225, 210, 100, 30)];
-    switchControl.on = YES;
+    if ([userdefaults boolForKey:@"playmusic"]) {
+        switchControl.on = YES;
+    }
+    else
+    {
+        switchControl.on = NO;
+        DLog(@"因为用户上次设置了不启动音乐..");
+    }
     [switchControl addTarget:self action:@selector(switchAction:) forControlEvents:UIControlEventValueChanged];
     [settingtableView addSubview:switchControl];
     [switchControl release];
@@ -203,7 +211,7 @@ static BTSettingViewController *_sharedSettingViewController = nil;
     //player.volume = 1;
     [player prepareToPlay];
 
-    if ([userdefaults boolForKey:@"playmusic"] == YES)
+    if ([userdefaults boolForKey:@"playmusic"])
     {
         [player play];
     }

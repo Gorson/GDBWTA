@@ -10,11 +10,12 @@
 
 #import "SegmentedButton.h"
 
+#import "BTMainModel.h"
 #define IS_IPAD (UI_USER_INTERFACE_IDIOM() == UIUserInterfaceIdiomPad)
 
 #define NUMBER_OF_ITEMS (IS_IPAD? 19: 12)
 #define NUMBER_OF_VISIBLE_ITEMS 25
-#define ITEM_SPACING 170.0f
+#define ITEM_SPACING 180.0f
 #define INCLUDE_PLACEHOLDERS YES
 
 @interface BTViewController()
@@ -23,10 +24,6 @@
 @end
 
 @implementation BTViewController
-@synthesize tabBar;
-// UI
-@synthesize dLabel;
-@synthesize fLabel;
 @synthesize carousel;
 // DATA
 @synthesize items;
@@ -52,10 +49,35 @@
     //set up data
 	wrap = YES;
 	self.items = [NSMutableArray array];
-	for (int i = 0; i < NUMBER_OF_ITEMS; i++)
-	{
-		[items addObject:[NSNumber numberWithInt:i]];
-	}
+//	for (int i = 0; i < NUMBER_OF_ITEMS; i++)
+//	{
+//		[items addObject:[NSNumber numberWithInt:i]];
+//	}
+    BTMainModel *mainModel = [[BTMainModel alloc]init];
+    mainModel.imagePath = @"mainView.png";
+    mainModel.infomation = @"协会最新资讯";
+    [items addObject:mainModel];
+    [mainModel release];
+    mainModel = [[BTMainModel alloc]init];
+    mainModel.imagePath = @"11.png";
+    mainModel.infomation = @"马天尼最新动态";
+    [items addObject:mainModel];
+    [mainModel release];
+    mainModel = [[BTMainModel alloc]init];
+    mainModel.imagePath = @"icon.png";
+    mainModel.infomation = @"Sunny Coffee最新动态";
+    [items addObject:mainModel];
+    [mainModel release];
+    mainModel = [[BTMainModel alloc]init];
+    mainModel.imagePath = @"18.png";
+    mainModel.infomation = @"线上学堂";
+    [items addObject:mainModel];
+    [mainModel release];
+    mainModel = [[BTMainModel alloc]init];
+    mainModel.imagePath = @"23.png";
+    mainModel.infomation = @"敬请期待";
+    [items addObject:mainModel];
+    [mainModel release];
 }
 
 - (void)initWithControl
@@ -86,7 +108,7 @@
     [self.view addSubview:carousel];
     
     UIButton *questionBtn = [[UIButton alloc]initWithFrame:CGRectMake(262.0f, 13.0f, 44.0f, 44.0f)];
-    [questionBtn setBackgroundColor:REDColor];
+    [questionBtn setBackgroundImage:[UIImage imageNamed:@"form.png"] forState:UIControlStateNormal];
     [questionBtn addTarget:self action:@selector(question:) forControlEvents:UIControlEventTouchUpInside];
     [self.view addSubview:questionBtn];
 }
@@ -103,13 +125,11 @@
 - (void)viewWillDisappear:(BOOL)animated
 {
     [super viewWillDisappear:animated];
-    [carousel setHidden:YES];
 }
 
 - (void)viewWillAppear:(BOOL)animated
 {
     [super viewWillAppear:animated];
-    [carousel setHidden:NO];
 }
 
 - (void)viewDidUnload
@@ -217,9 +237,6 @@
     self.settingViewController = nil;
     [settingViewController release];
     [items release];
-	[fLabel release];
-	[dLabel release];
-	[tabBar release];	
     [super dealloc];
 }
 
@@ -245,7 +262,8 @@
 	//create new view if no view is available for recycling
 	if (view == nil)
 	{
-		view = [[[UIImageView alloc] initWithImage:[UIImage imageNamed:@"mainView.png"]] autorelease];
+        BTMainModel * mainModel = [items objectAtIndex:index];
+		view = [[[UIImageView alloc] initWithImage:[UIImage imageNamed:mainModel.imagePath]] autorelease];
 //		label = [[[UILabel alloc] initWithFrame:view.bounds] autorelease];
 //		label.backgroundColor = [UIColor clearColor];
 //		label.textAlignment = UITextAlignmentCenter;
@@ -258,7 +276,7 @@
 	}
 	
     //set label
-	label.text = [[items objectAtIndex:index] stringValue];
+//	label.text = [[items objectAtIndex:index] stringValue];
 	
 	return view;
 }
@@ -316,6 +334,11 @@
 - (BOOL)carouselShouldWrap:(iCarousel *)carousel
 {
     return wrap;
+}
+
+- (void)carousel:(iCarousel *)carousel didSelectItemAtIndex:(NSInteger)index
+{
+    DLog(@"选择了第%d个..",index);
 }
 
 - (void)backView:(UIButton *)sender

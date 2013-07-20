@@ -14,7 +14,6 @@
     UITableView *settingtableView;
     NSMutableArray *contentArray;
     AVAudioPlayer *player;
-    NSUserDefaults *userdefaults;
 }
 - (void)playmusic;
 + (BTSettingViewController *) sharedInstance;

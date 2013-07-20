@@ -28,8 +28,6 @@
 		18905DC51793FEFD0015AD50 /* 爱很简单.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 18905DC41793FEFD0015AD50 /* 爱很简单.mp3 */; };
 		450637F91793213E0054228A /* icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 450637F71793213E0054228A /* icon.png */; };
 		450637FA1793213E0054228A /* icon@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 450637F81793213E0054228A /* icon@2x.png */; };
-		450637FC179321540054228A /* icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 450637FB179321540054228A /* icon.png */; };
-		450637FE1793215B0054228A /* icon@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 450637FD1793215B0054228A /* icon@2x.png */; };
 		453896C517931C2100B3087E /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 453896C417931C2100B3087E /* UIKit.framework */; };
 		453896C717931C2100B3087E /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 453896C617931C2100B3087E /* Foundation.framework */; };
 		453896C917931C2100B3087E /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 453896C817931C2100B3087E /* CoreGraphics.framework */; };
@@ -115,6 +113,9 @@
 		CEFBE09A17995B0800879FCD /* secondViewControllerDetail@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = CEFBE09817995B0800879FCD /* secondViewControllerDetail@2x.png */; };
 		CEFBE09D17995CFA00879FCD /* thirdViewController.png in Resources */ = {isa = PBXBuildFile; fileRef = CEFBE09B17995CFA00879FCD /* thirdViewController.png */; };
 		CEFBE09E17995CFA00879FCD /* thirdViewController@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = CEFBE09C17995CFA00879FCD /* thirdViewController@2x.png */; };
+		CEFBE0D0179AFF3100879FCD /* form.png in Resources */ = {isa = PBXBuildFile; fileRef = CEFBE0CE179AFF3100879FCD /* form.png */; };
+		CEFBE0D1179AFF3100879FCD /* form@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = CEFBE0CF179AFF3100879FCD /* form@2x.png */; };
+		CEFBE0D5179B033400879FCD /* BTMainModel.m in Sources */ = {isa = PBXBuildFile; fileRef = CEFBE0D4179B033400879FCD /* BTMainModel.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -145,8 +146,6 @@
 		18905DC41793FEFD0015AD50 /* 爱很简单.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "爱很简单.mp3"; sourceTree = "<group>"; };
 		450637F71793213E0054228A /* icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = icon.png; sourceTree = "<group>"; };
 		450637F81793213E0054228A /* icon@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icon@2x.png"; sourceTree = "<group>"; };
-		450637FB179321540054228A /* icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = icon.png; path = ../../icon.png; sourceTree = "<group>"; };
-		450637FD1793215B0054228A /* icon@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "icon@2x.png"; path = "../../icon@2x.png"; sourceTree = "<group>"; };
 		453896C117931C2100B3087E /* GDBWTA.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GDBWTA.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		453896C417931C2100B3087E /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		453896C617931C2100B3087E /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -246,6 +245,10 @@
 		CEFBE09817995B0800879FCD /* secondViewControllerDetail@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "secondViewControllerDetail@2x.png"; sourceTree = "<group>"; };
 		CEFBE09B17995CFA00879FCD /* thirdViewController.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = thirdViewController.png; sourceTree = "<group>"; };
 		CEFBE09C17995CFA00879FCD /* thirdViewController@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "thirdViewController@2x.png"; sourceTree = "<group>"; };
+		CEFBE0CE179AFF3100879FCD /* form.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = form.png; sourceTree = "<group>"; };
+		CEFBE0CF179AFF3100879FCD /* form@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "form@2x.png"; sourceTree = "<group>"; };
+		CEFBE0D3179B033400879FCD /* BTMainModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BTMainModel.h; sourceTree = "<group>"; };
+		CEFBE0D4179B033400879FCD /* BTMainModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BTMainModel.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -378,6 +381,8 @@
 		450637F61793213E0054228A /* image */ = {
 			isa = PBXGroup;
 			children = (
+				CEFBE0CE179AFF3100879FCD /* form.png */,
+				CEFBE0CF179AFF3100879FCD /* form@2x.png */,
 				CEFBE09B17995CFA00879FCD /* thirdViewController.png */,
 				CEFBE09C17995CFA00879FCD /* thirdViewController@2x.png */,
 				CEFBE09717995B0800879FCD /* secondViewControllerDetail.png */,
@@ -388,8 +393,6 @@
 				459908EA1795BD03005B0357 /* mainView@2x.png */,
 				459908EB1795BD03005B0357 /* mainView.png */,
 				18905DC41793FEFD0015AD50 /* 爱很简单.mp3 */,
-				450637FD1793215B0054228A /* icon@2x.png */,
-				450637FB179321540054228A /* icon.png */,
 				458E10B61793B43F0004C704 /* background.png */,
 				458E10B71793B43F0004C704 /* page.png */,
 				458E10A21793A4630004C704 /* tabbar1.png */,
@@ -435,6 +438,7 @@
 		453896CA17931C2100B3087E /* GDBWTA */ = {
 			isa = PBXGroup;
 			children = (
+				CEFBE0D2179B030800879FCD /* model */,
 				458E10A61793AAFD0004C704 /* utility */,
 				45CC680C17939C640008AD05 /* Handler */,
 				453896E717931C4F00B3087E /* MainViewController */,
@@ -607,6 +611,15 @@
 			path = glassSegmentedButtons;
 			sourceTree = "<group>";
 		};
+		CEFBE0D2179B030800879FCD /* model */ = {
+			isa = PBXGroup;
+			children = (
+				CEFBE0D3179B033400879FCD /* BTMainModel.h */,
+				CEFBE0D4179B033400879FCD /* BTMainModel.m */,
+			);
+			path = model;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -665,8 +678,6 @@
 				453896DB17931C2100B3087E /* Default-568h@2x.png in Resources */,
 				450637F91793213E0054228A /* icon.png in Resources */,
 				450637FA1793213E0054228A /* icon@2x.png in Resources */,
-				450637FC179321540054228A /* icon.png in Resources */,
-				450637FE1793215B0054228A /* icon@2x.png in Resources */,
 				458E10A41793A4630004C704 /* tabbar1.png in Resources */,
 				458E10A51793A4630004C704 /* tabbar1@2x.png in Resources */,
 				458E10B81793B43F0004C704 /* background.png in Resources */,
@@ -742,6 +753,8 @@
 				CEFBE09A17995B0800879FCD /* secondViewControllerDetail@2x.png in Resources */,
 				CEFBE09D17995CFA00879FCD /* thirdViewController.png in Resources */,
 				CEFBE09E17995CFA00879FCD /* thirdViewController@2x.png in Resources */,
+				CEFBE0D0179AFF3100879FCD /* form.png in Resources */,
+				CEFBE0D1179AFF3100879FCD /* form@2x.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -769,6 +782,7 @@
 				459908E81795BC4C005B0357 /* RadioButton.m in Sources */,
 				459908E91795BC4C005B0357 /* RadioButtonViewController.m in Sources */,
 				CE8C85001798ECEB00F871DE /* SegmentedButton.m in Sources */,
+				CEFBE0D5179B033400879FCD /* BTMainModel.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -843,6 +857,8 @@
 		453896E517931C2100B3087E /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CODE_SIGN_IDENTITY = "iPhone Developer: WU WING (5X2H4P7D3A)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: WU WING (5X2H4P7D3A)";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"\"$(SRCROOT)\"",
@@ -852,6 +868,8 @@
 				INFOPLIST_FILE = "GDBWTA/GDBWTA-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
@@ -859,6 +877,8 @@
 		453896E617931C2100B3087E /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CODE_SIGN_IDENTITY = "iPhone Developer: WU WING (5X2H4P7D3A)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: WU WING (5X2H4P7D3A)";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"\"$(SRCROOT)\"",
@@ -868,6 +888,8 @@
 				INFOPLIST_FILE = "GDBWTA/GDBWTA-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Release;

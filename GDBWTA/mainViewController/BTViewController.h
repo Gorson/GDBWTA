@@ -8,22 +8,16 @@
 #import "iCarousel.h"
 @class SegmentedButton;
 
-@interface BTViewController : UIViewController <InfiniTabBarDelegate,iCarouselDataSource, iCarouselDelegate> {
-	InfiniTabBar *tabBar;
-	
-	// UI
-	UILabel *dLabel;
-	UILabel *fLabel;
+@interface BTViewController : UIViewController <iCarouselDataSource, iCarouselDelegate>
+{
+    
 }
 // DATA
 @property (nonatomic, retain) NSMutableArray *items;
 @property (nonatomic, assign) BOOL wrap;
 
 // UI
-@property (nonatomic, retain) InfiniTabBar *tabBar;
 @property (nonatomic, retain) iCarousel *carousel;
-@property (nonatomic, retain) UILabel *dLabel;
-@property (nonatomic, retain) UILabel *fLabel;
 @property (strong, nonatomic)SegmentedButton *segmentedButtonView;
 @property (strong, nonatomic)SegmentedButton *imageSegmentedButton;
 
