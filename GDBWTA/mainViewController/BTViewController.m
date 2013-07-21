@@ -156,64 +156,64 @@
         }
             break;
         case 1:
-        {
-            UIViewController *btCocktailViewController = [[UIViewController alloc]init];
-            UIImageView *backgoundView = [[UIImageView alloc]initWithFrame:CGRectMake(0.0f, 0.0f, IPHONE_WIDTH, IPHONE_HEIGHT)];
-            [backgoundView setImage:[UIImage imageNamed:@"background.png"]];
-            [self.view addSubview:backgoundView];
-            UIButton *backButton = [UIButton buttonWithType:UIButtonTypeCustom];
-            backButton.frame = CGRectMake(15, 10, 40, 20);
-            backButton.backgroundColor = REDColor;
-            [backButton addTarget:self action:@selector(backView:) forControlEvents:UIControlEventTouchUpInside];
-            [btCocktailViewController.view addSubview:backgoundView];
-            [btCocktailViewController.view addSubview:backButton];
-            [self.navigationController pushViewController:btCocktailViewController animated:YES];
-        }
+//        {
+//            UIViewController *btCocktailViewController = [[UIViewController alloc]init];
+//            UIImageView *backgoundView = [[UIImageView alloc]initWithFrame:CGRectMake(0.0f, 0.0f, IPHONE_WIDTH, IPHONE_HEIGHT)];
+//            [backgoundView setImage:[UIImage imageNamed:@"background.png"]];
+//            [self.view addSubview:backgoundView];
+//            UIButton *backButton = [UIButton buttonWithType:UIButtonTypeCustom];
+//            backButton.frame = CGRectMake(15, 10, 40, 20);
+//            backButton.backgroundColor = REDColor;
+//            [backButton addTarget:self action:@selector(backView:) forControlEvents:UIControlEventTouchUpInside];
+//            [btCocktailViewController.view addSubview:backgoundView];
+//            [btCocktailViewController.view addSubview:backButton];
+//            [self.navigationController pushViewController:btCocktailViewController animated:YES];
+//        }
             break;
         case 2:
-        {
-            UIViewController *btCocktailViewController = [[UIViewController alloc]init];
-            UIImageView *backgoundView = [[UIImageView alloc]initWithFrame:CGRectMake(0.0f, 0.0f, IPHONE_WIDTH, IPHONE_HEIGHT)];
-            [backgoundView setImage:[UIImage imageNamed:@"thirdViewController.png"]];
-            [self.view addSubview:backgoundView];
-            UIButton *backButton = [UIButton buttonWithType:UIButtonTypeCustom];
-            backButton.frame = CGRectMake(15, 10, 40, 20);
-//            backButton.backgroundColor = REDColor;
-            [backButton addTarget:self action:@selector(backView:) forControlEvents:UIControlEventTouchUpInside];
-            [btCocktailViewController.view addSubview:backgoundView];
-            [btCocktailViewController.view addSubview:backButton];
-            [self.navigationController pushViewController:btCocktailViewController animated:YES];
-        }
+//        {
+//            UIViewController *btCocktailViewController = [[UIViewController alloc]init];
+//            UIImageView *backgoundView = [[UIImageView alloc]initWithFrame:CGRectMake(0.0f, 0.0f, IPHONE_WIDTH, IPHONE_HEIGHT)];
+//            [backgoundView setImage:[UIImage imageNamed:@"thirdViewController.png"]];
+//            [self.view addSubview:backgoundView];
+//            UIButton *backButton = [UIButton buttonWithType:UIButtonTypeCustom];
+//            backButton.frame = CGRectMake(15, 10, 40, 20);
+////            backButton.backgroundColor = REDColor;
+//            [backButton addTarget:self action:@selector(backView:) forControlEvents:UIControlEventTouchUpInside];
+//            [btCocktailViewController.view addSubview:backgoundView];
+//            [btCocktailViewController.view addSubview:backButton];
+//            [self.navigationController pushViewController:btCocktailViewController animated:YES];
+//        }
             break;
         case 3:
-        {
-            UIViewController *btCocktailViewController = [[UIViewController alloc]init];
-            UIImageView *backgoundView = [[UIImageView alloc]initWithFrame:CGRectMake(0.0f, 0.0f, IPHONE_WIDTH, IPHONE_HEIGHT)];
-            [backgoundView setImage:[UIImage imageNamed:@"background.png"]];
-            [self.view addSubview:backgoundView];
-            UIButton *backButton = [UIButton buttonWithType:UIButtonTypeCustom];
-            backButton.frame = CGRectMake(15, 10, 40, 20);
-            backButton.backgroundColor = REDColor;
-            [backButton addTarget:self action:@selector(backView:) forControlEvents:UIControlEventTouchUpInside];
-            [btCocktailViewController.view addSubview:backgoundView];
-            [btCocktailViewController.view addSubview:backButton];
-            [self.navigationController pushViewController:btCocktailViewController animated:YES];
-        }
+//        {
+//            UIViewController *btCocktailViewController = [[UIViewController alloc]init];
+//            UIImageView *backgoundView = [[UIImageView alloc]initWithFrame:CGRectMake(0.0f, 0.0f, IPHONE_WIDTH, IPHONE_HEIGHT)];
+//            [backgoundView setImage:[UIImage imageNamed:@"background.png"]];
+//            [self.view addSubview:backgoundView];
+//            UIButton *backButton = [UIButton buttonWithType:UIButtonTypeCustom];
+//            backButton.frame = CGRectMake(15, 10, 40, 20);
+//            backButton.backgroundColor = REDColor;
+//            [backButton addTarget:self action:@selector(backView:) forControlEvents:UIControlEventTouchUpInside];
+//            [btCocktailViewController.view addSubview:backgoundView];
+//            [btCocktailViewController.view addSubview:backButton];
+//            [self.navigationController pushViewController:btCocktailViewController animated:YES];
+//        }
             break;
         case 4:
-        {
-            UIViewController *btCocktailViewController = [[UIViewController alloc]init];
-            UIImageView *backgoundView = [[UIImageView alloc]initWithFrame:CGRectMake(0.0f, 0.0f, IPHONE_WIDTH, IPHONE_HEIGHT)];
-            [backgoundView setImage:[UIImage imageNamed:@"background.png"]];
-            [self.view addSubview:backgoundView];
-            UIButton *backButton = [UIButton buttonWithType:UIButtonTypeCustom];
-            backButton.frame = CGRectMake(15, 10, 40, 20);
-            backButton.backgroundColor = REDColor;
-            [backButton addTarget:self action:@selector(backView:) forControlEvents:UIControlEventTouchUpInside];
-            [btCocktailViewController.view addSubview:backgoundView];
-            [btCocktailViewController.view addSubview:backButton];
-            [self.navigationController pushViewController:btCocktailViewController animated:YES];
-        }
+//        {
+//            UIViewController *btCocktailViewController = [[UIViewController alloc]init];
+//            UIImageView *backgoundView = [[UIImageView alloc]initWithFrame:CGRectMake(0.0f, 0.0f, IPHONE_WIDTH, IPHONE_HEIGHT)];
+//            [backgoundView setImage:[UIImage imageNamed:@"background.png"]];
+//            [self.view addSubview:backgoundView];
+//            UIButton *backButton = [UIButton buttonWithType:UIButtonTypeCustom];
+//            backButton.frame = CGRectMake(15, 10, 40, 20);
+//            backButton.backgroundColor = REDColor;
+//            [backButton addTarget:self action:@selector(backView:) forControlEvents:UIControlEventTouchUpInside];
+//            [btCocktailViewController.view addSubview:backgoundView];
+//            [btCocktailViewController.view addSubview:backButton];
+//            [self.navigationController pushViewController:btCocktailViewController animated:YES];
+//        }
             break;
         case 5:
         {

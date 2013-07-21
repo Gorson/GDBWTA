@@ -8,6 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-@interface BTCocktailViewController : UIViewController
+@interface BTCocktailViewController : UIViewController<UITabBarDelegate>
 
 @end

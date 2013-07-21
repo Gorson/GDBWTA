@@ -8,10 +8,23 @@
 
 #import "BTCocktailViewController.h"
 #import "SlidingGridView.h"
+#import "BTCocktailDetailViewController.h"
+
+#define NSINTEGER 7
+#define NUMBER_OF_PAGE 2
+
 
 @interface BTCocktailViewController () <SlidingGridViewDelegate>
 {
     UIButton *backButton;
+    UIToolbar *tabBar;
+    UIBarButtonItem *_type;
+    UIBarButtonItem *_train;
+    UIBarButtonItem *_referrals;
+    NSArray *items;
+    UIBarButtonItem *flexibleItem;
+    UIButton *_bt;
+    UIScrollView *_scrollView;
 }
 @property (nonatomic, strong) NSArray *images;
 @property (nonatomic, strong) SlidingGridView *slideController;
@@ -27,11 +40,10 @@
 {
     if (_slideController == nil)
     {
-        _slideController = [[SlidingGridView alloc] initWithFrame:CGRectMake(10, 0, 300, IPHONE_HEIGHT)];
+        _slideController = [[SlidingGridView alloc] initWithFrame:CGRectMake(10, 50, 300, 430-44)];
         _slideController.backgroundColor = [UIColor clearColor];
         _slideController.delegate = self;
-        _slideController.cellBackgroundColor = [UIColor darkGrayColor];
-
+        _slideController.cellBackgroundColor = [UIColor clearColor];
 //        [self.view addSubview: _slideController];
     }
     return _slideController;
@@ -39,29 +51,86 @@
 
 - (void)viewDidLoad
 {
-    self.navigationItem.title = @"Sliding Grid View";
+//    self.navigationItem.title = @"Sliding Grid View";
     [super viewDidLoad];
-    UIImageView *backgoundView = [[UIImageView alloc]initWithFrame:CGRectMake(0.0f, 0.0f, IPHONE_WIDTH, IPHONE_HEIGHT - 20.0f)];
-    [backgoundView setImage:[UIImage imageNamed:@"secondViewController.png"]];
-    [self.view addSubview:backgoundView];
+    [self initWithControl];
+    [self initWithUI];
+//    [self initWithControl];
+}
+
+-(void)initWithUI
+{
+    static const NSInteger NumberOfPage = NUMBER_OF_PAGE;
+    static const NSInteger ViewHeight = 320;
+    _scrollView =[[[UIScrollView alloc]init]autorelease];
+    _scrollView.frame = CGRectMake(0, 40, 320, 480-44-40);
+    NSInteger i;
+    for (i=1; i<NSINTEGER; i++) {
+        _bt = [UIButton buttonWithType:UIButtonTypeCustom];
+        _bt.tag = i;
+        _bt.backgroundColor = [UIColor yellowColor];
+        [_bt addTarget:self action:@selector(bt:) forControlEvents:UIControlEventTouchUpInside];
+        
+        switch (_bt.tag) {
+            case 1:
+                _bt.frame = CGRectMake(23.75, 60, 75, 122);
+                break;
+            case 2:
+                _bt.frame = CGRectMake(23.75*2+75, 60, 75, 122);
+                break;
+            case 3:
+                _bt.frame = CGRectMake(320-23.75-75, 60, 75, 122);
+                break;
+            case 4:
+                _bt.frame = CGRectMake(23.75, 60+20+122, 75.f, 122.f);
+                break;
+            case 5:
+                _bt.frame = CGRectMake(23.75*2+75, 60+20+122, 75.f, 122.f);
+                break;
+            case 6:
+                _bt.frame = CGRectMake(320-23.75-75, 60+20+122, 75.f, 122.f);
+                break;
+
+                
+            default:
+                break;
+        }
+        [_scrollView addSubview:_bt];
+
+    }
+    _scrollView.contentSize = CGSizeMake(320*NUMBER_OF_PAGE, ViewHeight);
+    _scrollView.pagingEnabled = YES;
+    _scrollView.showsHorizontalScrollIndicator = NO;
+    _scrollView.showsHorizontalScrollIndicator = NO;
+    [self.view addSubview:_scrollView];
     
     backButton = [UIButton buttonWithType:UIButtonTypeCustom];
-    backButton.frame = CGRectMake(15, 10, 40, 20);
-//    backButton.backgroundColor = [UIColor redColor];
+    backButton.frame = CGRectMake(0, 0, 30, 30);
+    backButton.backgroundColor = [UIColor blueColor];
     [backButton addTarget:self action:@selector(backView:) forControlEvents:UIControlEventTouchUpInside];
     [self.view addSubview:backButton];
     
-    backButton = [UIButton buttonWithType:UIButtonTypeCustom];
-    backButton.frame = CGRectMake(20, 80, 80, 100);
-//    backButton.backgroundColor = [UIColor redColor];
-    [backButton addTarget:self action:@selector(gotoDetailView) forControlEvents:UIControlEventTouchUpInside];
-    [self.view addSubview:backButton];
-
-//    secondViewControllerDetail.png
-	// Do any additional setup after loading the view, typically from a nib
+//    tabBar = [[UITabBar alloc] initWithFrame:CGRectMake(0.0, 480.0-69.0, 320.0, 49.0)];
+//    tabBar.delegate = self;
+//    [tabBar setBackgroundImage:[UIImage imageNamed:@"tabbar1.png"]];
+//    [self.view addSubview:tabBar];
     
-    //self.view.backgroundColor = [UIColor whiteColor];
-//    self.view.backgroundColor = [UIColor colorWithPatternImage:[UIImage imageNamed:@"bg.jpg"]];
+    tabBar = [[UIToolbar alloc] initWithFrame:CGRectMake(0, 460-40, 320, 44)];
+    tabBar.barStyle = UIBarStyleDefault;
+    [self.view addSubview:tabBar];
+    [tabBar release];
+
+//    _type = [[UIBarButtonItem alloc]initWithImage:[UIImage imageNamed:@"icon"] style:UIBarButtonItemStylePlain target:self action:@selector(_type:)];
+        _type = [[UIBarButtonItem alloc]initWithTitle:@"品种" style:UIBarButtonItemStylePlain target:self action:@selector(_type:) ];
+    _train = [[UIBarButtonItem alloc]initWithTitle:@"培训" style:UIBarButtonItemStylePlain target:self action:@selector(_train:) ];
+    _referrals = [[UIBarButtonItem alloc]initWithTitle:@"推介" style:UIBarButtonItemStylePlain target:self action:@selector(_referrals:) ];
+    flexibleItem = [[UIBarButtonItem alloc]initWithBarButtonSystemItem:UIBarButtonSystemItemFlexibleSpace target:self action:nil];
+    
+    items = @[_type,flexibleItem,_train,flexibleItem,_referrals];
+//    [self setToolbarItems:items animated:YES];
+    [tabBar setItems:items animated:YES];
+    
+    self.view.backgroundColor = [UIColor colorWithPatternImage:[UIImage imageNamed:@"bg.jpg"]];
     
     NSMutableArray *imgs = [[NSMutableArray alloc] init];
     
@@ -76,7 +145,22 @@
     self.images = imgs;
     
     self.slideController.allowRefreshWithShake = YES;
+
+
 }
+
+- (void)initWithControl
+{
+    UIImageView *backgoundView = [[UIImageView alloc]initWithFrame:CGRectMake(0.0f, 0.0f, IPHONE_WIDTH, IPHONE_HEIGHT)];
+    [backgoundView setImage:[UIImage imageNamed:@"mainBackgound.png"]];
+    [self.view addSubview:backgoundView];
+}
+
+//-(void)viewWillAppear:(BOOL)animated
+//{
+//    [super viewWillAppear:animated];
+//    [self.navigationController setToolbarHidden:NO animated:YES];
+//}
 
 - (void)viewDidAppear:(BOOL)animated
 {
@@ -89,6 +173,9 @@
     self.slideController.cellSubViews = self.images;
 }
 
+/*
+ 获取图片的id
+ */
 - (void)didSelectViewIn:(SlidingGridView *)controller selectedViewIndex:(int)viewIndex
 {
     NSLog (@"Selected image idx: %d", viewIndex);
@@ -99,19 +186,11 @@
     [self.navigationController popViewControllerAnimated:YES];
 }
 
-- (void)gotoDetailView
+- (void)_bt:(UIButton *)sender
 {
-    UIImageView *backgoundView = [[UIImageView alloc]initWithFrame:CGRectMake(0.0f, 0.0f, IPHONE_WIDTH, IPHONE_HEIGHT - 20.0f)];
-    [backgoundView setImage:[UIImage imageNamed:@"secondViewControllerDetail.png"]];
-    UIButton *backButton2 = [UIButton buttonWithType:UIButtonTypeCustom];
-    backButton2.frame = CGRectMake(15, 10, 40, 20);
-//    backButton2.backgroundColor = REDColor;
-    [backButton2 addTarget:self action:@selector(backView:) forControlEvents:UIControlEventTouchUpInside];
-    
-    UIViewController * detailViewController = [[UIViewController alloc]init];
-    [detailViewController.view addSubview:backgoundView];
-    [detailViewController.view addSubview:backButton2];
-    [self.navigationController pushViewController:detailViewController animated:YES];
+    BTCocktailDetailViewController *btCocktailDetailViewController = [[BTCocktailDetailViewController alloc]init];
+    [self.navigationController pushViewController:btCocktailDetailViewController animated:YES];
+
 }
 
 @end

@@ -90,7 +90,6 @@
 		4566A7EE17956CD400B0ED5A /* refresh_h.png in Resources */ = {isa = PBXBuildFile; fileRef = 4566A7BA17956CD400B0ED5A /* refresh_h.png */; };
 		4566A7EF17956CD400B0ED5A /* tabbar.png in Resources */ = {isa = PBXBuildFile; fileRef = 4566A7BB17956CD400B0ED5A /* tabbar.png */; };
 		4566A7F017956CD400B0ED5A /* tabbar@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 4566A7BC17956CD400B0ED5A /* tabbar@2x.png */; };
-		4566A7F317956D7100B0ED5A /* BTCocktailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4566A7F217956D7100B0ED5A /* BTCocktailViewController.m */; };
 		4566A7FB17956E0A00B0ED5A /* SlidingGridSpinner.m in Sources */ = {isa = PBXBuildFile; fileRef = 4566A7F617956E0A00B0ED5A /* SlidingGridSpinner.m */; };
 		4566A7FC17956E0A00B0ED5A /* SlidingGridView.m in Sources */ = {isa = PBXBuildFile; fileRef = 4566A7F817956E0A00B0ED5A /* SlidingGridView.m */; };
 		458E10A41793A4630004C704 /* tabbar1.png in Resources */ = {isa = PBXBuildFile; fileRef = 458E10A21793A4630004C704 /* tabbar1.png */; };
@@ -104,6 +103,8 @@
 		459908E91795BC4C005B0357 /* RadioButtonViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 459908E71795BC4C005B0357 /* RadioButtonViewController.m */; };
 		459908EC1795BD03005B0357 /* mainView@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 459908EA1795BD03005B0357 /* mainView@2x.png */; };
 		459908ED1795BD03005B0357 /* mainView.png in Resources */ = {isa = PBXBuildFile; fileRef = 459908EB1795BD03005B0357 /* mainView.png */; };
+		45AB9E0A179B7FE8000A98D6 /* BTCocktailDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 45AB9E07179B7FE8000A98D6 /* BTCocktailDetailViewController.m */; };
+		45AB9E0B179B7FE8000A98D6 /* BTCocktailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 45AB9E09179B7FE8000A98D6 /* BTCocktailViewController.m */; };
 		CE8C85001798ECEB00F871DE /* SegmentedButton.m in Sources */ = {isa = PBXBuildFile; fileRef = CE8C84FF1798ECEB00F871DE /* SegmentedButton.m */; };
 		CE8C85031798EEE300F871DE /* settings.png in Resources */ = {isa = PBXBuildFile; fileRef = CE8C85011798EEE300F871DE /* settings.png */; };
 		CE8C85041798EEE300F871DE /* settings@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = CE8C85021798EEE300F871DE /* settings@2x.png */; };
@@ -213,8 +214,6 @@
 		4566A7BA17956CD400B0ED5A /* refresh_h.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = refresh_h.png; sourceTree = "<group>"; };
 		4566A7BB17956CD400B0ED5A /* tabbar.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = tabbar.png; sourceTree = "<group>"; };
 		4566A7BC17956CD400B0ED5A /* tabbar@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "tabbar@2x.png"; sourceTree = "<group>"; };
-		4566A7F117956D7100B0ED5A /* BTCocktailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BTCocktailViewController.h; sourceTree = "<group>"; };
-		4566A7F217956D7100B0ED5A /* BTCocktailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BTCocktailViewController.m; sourceTree = "<group>"; };
 		4566A7F517956E0A00B0ED5A /* SlidingGridSpinner.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SlidingGridSpinner.h; sourceTree = "<group>"; };
 		4566A7F617956E0A00B0ED5A /* SlidingGridSpinner.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SlidingGridSpinner.m; sourceTree = "<group>"; };
 		4566A7F717956E0A00B0ED5A /* SlidingGridView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SlidingGridView.h; sourceTree = "<group>"; };
@@ -234,6 +233,10 @@
 		459908E71795BC4C005B0357 /* RadioButtonViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RadioButtonViewController.m; sourceTree = "<group>"; };
 		459908EA1795BD03005B0357 /* mainView@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "mainView@2x.png"; sourceTree = "<group>"; };
 		459908EB1795BD03005B0357 /* mainView.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = mainView.png; sourceTree = "<group>"; };
+		45AB9E06179B7FE8000A98D6 /* BTCocktailDetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BTCocktailDetailViewController.h; sourceTree = "<group>"; };
+		45AB9E07179B7FE8000A98D6 /* BTCocktailDetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BTCocktailDetailViewController.m; sourceTree = "<group>"; };
+		45AB9E08179B7FE8000A98D6 /* BTCocktailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BTCocktailViewController.h; sourceTree = "<group>"; };
+		45AB9E09179B7FE8000A98D6 /* BTCocktailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BTCocktailViewController.m; sourceTree = "<group>"; };
 		45CC680D17939C640008AD05 /* BTConstant.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BTConstant.h; sourceTree = "<group>"; };
 		CE8C84FE1798ECEB00F871DE /* SegmentedButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SegmentedButton.h; sourceTree = "<group>"; };
 		CE8C84FF1798ECEB00F871DE /* SegmentedButton.m */ = {isa = PBXFileReference; fileEncoding = 4; indentWidth = 5; lastKnownFileType = sourcecode.c.objc; path = SegmentedButton.m; sourceTree = "<group>"; };
@@ -273,8 +276,10 @@
 		18905D8B1793CCC60015AD50 /* 调酒模块 */ = {
 			isa = PBXGroup;
 			children = (
-				4566A7F117956D7100B0ED5A /* BTCocktailViewController.h */,
-				4566A7F217956D7100B0ED5A /* BTCocktailViewController.m */,
+				45AB9E06179B7FE8000A98D6 /* BTCocktailDetailViewController.h */,
+				45AB9E07179B7FE8000A98D6 /* BTCocktailDetailViewController.m */,
+				45AB9E08179B7FE8000A98D6 /* BTCocktailViewController.h */,
+				45AB9E09179B7FE8000A98D6 /* BTCocktailViewController.m */,
 			);
 			name = "调酒模块";
 			path = "mainViewController/调酒模块";
@@ -776,13 +781,14 @@
 				18905DA21793D4B50015AD50 /* Reachability.m in Sources */,
 				18905DAA1793D8E20015AD50 /* BTAboutusViewController.m in Sources */,
 				18905DAE1793E31E0015AD50 /* CustomAlertView.m in Sources */,
-				4566A7F317956D7100B0ED5A /* BTCocktailViewController.m in Sources */,
 				4566A7FB17956E0A00B0ED5A /* SlidingGridSpinner.m in Sources */,
 				4566A7FC17956E0A00B0ED5A /* SlidingGridView.m in Sources */,
 				459908E81795BC4C005B0357 /* RadioButton.m in Sources */,
 				459908E91795BC4C005B0357 /* RadioButtonViewController.m in Sources */,
 				CE8C85001798ECEB00F871DE /* SegmentedButton.m in Sources */,
 				CEFBE0D5179B033400879FCD /* BTMainModel.m in Sources */,
+				45AB9E0A179B7FE8000A98D6 /* BTCocktailDetailViewController.m in Sources */,
+				45AB9E0B179B7FE8000A98D6 /* BTCocktailViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
