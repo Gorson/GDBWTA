@@ -9,7 +9,7 @@
 #import <UIKit/UIKit.h>
 #import <AVFoundation/AVFoundation.h>
 
-@interface BTSettingViewController : UIViewController<UITableViewDataSource,UITableViewDelegate>
+@interface BTSettingViewController : BTParentViewController
 {
     UITableView *settingtableView;
     NSMutableArray *contentArray;

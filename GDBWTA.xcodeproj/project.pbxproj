@@ -88,8 +88,8 @@
 		4566A7EC17956CD400B0ED5A /* ipad-list-item-selected@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 4566A7B817956CD400B0ED5A /* ipad-list-item-selected@2x.png */; };
 		4566A7ED17956CD400B0ED5A /* refresh.png in Resources */ = {isa = PBXBuildFile; fileRef = 4566A7B917956CD400B0ED5A /* refresh.png */; };
 		4566A7EE17956CD400B0ED5A /* refresh_h.png in Resources */ = {isa = PBXBuildFile; fileRef = 4566A7BA17956CD400B0ED5A /* refresh_h.png */; };
-		4566A7EF17956CD400B0ED5A /* tabbar.png in Resources */ = {isa = PBXBuildFile; fileRef = 4566A7BB17956CD400B0ED5A /* tabbar.png */; };
-		4566A7F017956CD400B0ED5A /* tabbar@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 4566A7BC17956CD400B0ED5A /* tabbar@2x.png */; };
+		4566A7EF17956CD400B0ED5A /* blackTabbar.png in Resources */ = {isa = PBXBuildFile; fileRef = 4566A7BB17956CD400B0ED5A /* blackTabbar.png */; };
+		4566A7F017956CD400B0ED5A /* blackTabbar@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 4566A7BC17956CD400B0ED5A /* blackTabbar@2x.png */; };
 		4566A7FB17956E0A00B0ED5A /* SlidingGridSpinner.m in Sources */ = {isa = PBXBuildFile; fileRef = 4566A7F617956E0A00B0ED5A /* SlidingGridSpinner.m */; };
 		4566A7FC17956E0A00B0ED5A /* SlidingGridView.m in Sources */ = {isa = PBXBuildFile; fileRef = 4566A7F817956E0A00B0ED5A /* SlidingGridView.m */; };
 		458E10A41793A4630004C704 /* tabbar1.png in Resources */ = {isa = PBXBuildFile; fileRef = 458E10A21793A4630004C704 /* tabbar1.png */; };
@@ -108,6 +108,7 @@
 		CE8C85001798ECEB00F871DE /* SegmentedButton.m in Sources */ = {isa = PBXBuildFile; fileRef = CE8C84FF1798ECEB00F871DE /* SegmentedButton.m */; };
 		CE8C85031798EEE300F871DE /* settings.png in Resources */ = {isa = PBXBuildFile; fileRef = CE8C85011798EEE300F871DE /* settings.png */; };
 		CE8C85041798EEE300F871DE /* settings@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = CE8C85021798EEE300F871DE /* settings@2x.png */; };
+		CEA6A28E179B9221009BFAE9 /* BTParentViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CEA6A28D179B9221009BFAE9 /* BTParentViewController.m */; };
 		CEFBE0951799594300879FCD /* secondViewController.png in Resources */ = {isa = PBXBuildFile; fileRef = CEFBE0931799594300879FCD /* secondViewController.png */; };
 		CEFBE0961799594300879FCD /* secondViewController@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = CEFBE0941799594300879FCD /* secondViewController@2x.png */; };
 		CEFBE09917995B0800879FCD /* secondViewControllerDetail.png in Resources */ = {isa = PBXBuildFile; fileRef = CEFBE09717995B0800879FCD /* secondViewControllerDetail.png */; };
@@ -212,8 +213,8 @@
 		4566A7B817956CD400B0ED5A /* ipad-list-item-selected@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "ipad-list-item-selected@2x.png"; sourceTree = "<group>"; };
 		4566A7B917956CD400B0ED5A /* refresh.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = refresh.png; sourceTree = "<group>"; };
 		4566A7BA17956CD400B0ED5A /* refresh_h.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = refresh_h.png; sourceTree = "<group>"; };
-		4566A7BB17956CD400B0ED5A /* tabbar.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = tabbar.png; sourceTree = "<group>"; };
-		4566A7BC17956CD400B0ED5A /* tabbar@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "tabbar@2x.png"; sourceTree = "<group>"; };
+		4566A7BB17956CD400B0ED5A /* blackTabbar.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = blackTabbar.png; sourceTree = "<group>"; };
+		4566A7BC17956CD400B0ED5A /* blackTabbar@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "blackTabbar@2x.png"; sourceTree = "<group>"; };
 		4566A7F517956E0A00B0ED5A /* SlidingGridSpinner.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SlidingGridSpinner.h; sourceTree = "<group>"; };
 		4566A7F617956E0A00B0ED5A /* SlidingGridSpinner.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SlidingGridSpinner.m; sourceTree = "<group>"; };
 		4566A7F717956E0A00B0ED5A /* SlidingGridView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SlidingGridView.h; sourceTree = "<group>"; };
@@ -242,6 +243,8 @@
 		CE8C84FF1798ECEB00F871DE /* SegmentedButton.m */ = {isa = PBXFileReference; fileEncoding = 4; indentWidth = 5; lastKnownFileType = sourcecode.c.objc; path = SegmentedButton.m; sourceTree = "<group>"; };
 		CE8C85011798EEE300F871DE /* settings.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = settings.png; sourceTree = "<group>"; };
 		CE8C85021798EEE300F871DE /* settings@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "settings@2x.png"; sourceTree = "<group>"; };
+		CEA6A28C179B9221009BFAE9 /* BTParentViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = BTParentViewController.h; path = mainViewController/BTParentViewController.h; sourceTree = "<group>"; };
+		CEA6A28D179B9221009BFAE9 /* BTParentViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = BTParentViewController.m; path = mainViewController/BTParentViewController.m; sourceTree = "<group>"; };
 		CEFBE0931799594300879FCD /* secondViewController.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = secondViewController.png; sourceTree = "<group>"; };
 		CEFBE0941799594300879FCD /* secondViewController@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "secondViewController@2x.png"; sourceTree = "<group>"; };
 		CEFBE09717995B0800879FCD /* secondViewControllerDetail.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = secondViewControllerDetail.png; sourceTree = "<group>"; };
@@ -482,6 +485,8 @@
 				18905D8B1793CCC60015AD50 /* 调酒模块 */,
 				453896F317931F2B00B3087E /* BTViewController.h */,
 				453896F417931F2B00B3087E /* BTViewController.m */,
+				CEA6A28C179B9221009BFAE9 /* BTParentViewController.h */,
+				CEA6A28D179B9221009BFAE9 /* BTParentViewController.m */,
 			);
 			name = MainViewController;
 			sourceTree = "<group>";
@@ -539,8 +544,8 @@
 				4566A7B817956CD400B0ED5A /* ipad-list-item-selected@2x.png */,
 				4566A7B917956CD400B0ED5A /* refresh.png */,
 				4566A7BA17956CD400B0ED5A /* refresh_h.png */,
-				4566A7BB17956CD400B0ED5A /* tabbar.png */,
-				4566A7BC17956CD400B0ED5A /* tabbar@2x.png */,
+				4566A7BB17956CD400B0ED5A /* blackTabbar.png */,
+				4566A7BC17956CD400B0ED5A /* blackTabbar@2x.png */,
 			);
 			path = Imgs;
 			sourceTree = "<group>";
@@ -746,8 +751,8 @@
 				4566A7EC17956CD400B0ED5A /* ipad-list-item-selected@2x.png in Resources */,
 				4566A7ED17956CD400B0ED5A /* refresh.png in Resources */,
 				4566A7EE17956CD400B0ED5A /* refresh_h.png in Resources */,
-				4566A7EF17956CD400B0ED5A /* tabbar.png in Resources */,
-				4566A7F017956CD400B0ED5A /* tabbar@2x.png in Resources */,
+				4566A7EF17956CD400B0ED5A /* blackTabbar.png in Resources */,
+				4566A7F017956CD400B0ED5A /* blackTabbar@2x.png in Resources */,
 				459908EC1795BD03005B0357 /* mainView@2x.png in Resources */,
 				459908ED1795BD03005B0357 /* mainView.png in Resources */,
 				CE8C85031798EEE300F871DE /* settings.png in Resources */,
@@ -789,6 +794,7 @@
 				CEFBE0D5179B033400879FCD /* BTMainModel.m in Sources */,
 				45AB9E0A179B7FE8000A98D6 /* BTCocktailDetailViewController.m in Sources */,
 				45AB9E0B179B7FE8000A98D6 /* BTCocktailViewController.m in Sources */,
+				CEA6A28E179B9221009BFAE9 /* BTParentViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

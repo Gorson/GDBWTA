@@ -53,13 +53,14 @@ static BTSettingViewController *_sharedSettingViewController = nil;
 
 - (void)initWithControl
 {
+    [self.view setBackgroundColor:[UIColor redColor]];
+    [_confirmButton setHidden:YES];
     settingtableView = [[UITableView alloc]initWithFrame:CGRectMake(0, 30.0f, IPHONE_WIDTH, IPHONE_HEIGHT - 180.0f) style:UITableViewStyleGrouped];
     settingtableView.dataSource = self;
     settingtableView.delegate = self;
-    settingtableView.backgroundView = nil;
-    UIImageView *backgroundView = [[UIImageView alloc]initWithImage:[UIImage imageNamed:@"background.png"]];
+    [settingtableView setBackgroundView:nil];
+    [settingtableView setBackgroundColor:[UIColor clearColor]];
     settingtableView.scrollEnabled = NO;
-    [self.view addSubview:backgroundView];
     [self.view addSubview:settingtableView];
     [settingtableView release];
     
@@ -75,13 +76,6 @@ static BTSettingViewController *_sharedSettingViewController = nil;
     [switchControl addTarget:self action:@selector(switchAction:) forControlEvents:UIControlEventValueChanged];
     [settingtableView addSubview:switchControl];
     [switchControl release];
-    
-    UIButton *backButton = [UIButton buttonWithType:UIButtonTypeCustom];
-    backButton.frame = CGRectMake(15, 10, 40, 20);
-    backButton.backgroundColor = REDColor;
-    [backButton addTarget:self action:@selector(backView:) forControlEvents:UIControlEventTouchUpInside];
-    [self.view addSubview:backButton];
-    
 }
 
 - (void)initWithData
@@ -92,6 +86,7 @@ static BTSettingViewController *_sharedSettingViewController = nil;
 - (void)viewDidLoad
 {
     [super viewDidLoad];
+
     [self initWithData];
     [self initWithControl];
 }
@@ -234,11 +229,6 @@ static BTSettingViewController *_sharedSettingViewController = nil;
         [userdefaults setBool:NO forKey:@"playmusic"];
         [player stop];
     }
-}
-
-- (void)backView:(UIButton *)sender
-{
-    [self.navigationController popViewControllerAnimated:YES];
 }
 
 - (void)didReceiveMemoryWarning

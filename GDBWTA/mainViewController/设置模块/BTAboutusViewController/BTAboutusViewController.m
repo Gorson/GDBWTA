@@ -25,12 +25,17 @@
 
 - (void)initWithControl
 {
-    
+    UIButton *backButton = [UIButton buttonWithType:UIButtonTypeCustom];
+    backButton.frame = CGRectMake(15, 10, 40, 20);
+    backButton.backgroundColor = REDColor;
+    [backButton addTarget:self action:@selector(backView:) forControlEvents:UIControlEventTouchUpInside];
+    [self.view addSubview:backButton];
 }
 
 - (void)viewDidLoad
 {
     [super viewDidLoad];
+    [self initWithControl];
 	// Do any additional setup after loading the view.
 }
 
@@ -38,6 +43,11 @@
 {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
+}
+
+- (void)backView:(UIButton *)sender
+{
+    [self.navigationController popViewControllerAnimated:YES];
 }
 
 @end
